@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="icon" type="image/png" href="images/ut-icon.png"> <!--TODO: Replace UT icon-->
+  <link rel="icon" type="image/png" href="images/ut-icon.png"> 
 
   <style>
     :root {
@@ -36,19 +36,20 @@
                 <name>Akanksha Saran</name>
               </p>
               <p> I am a PhD candidate in the Department of Computer Science at the University of Texas at Austin where I'm advised by <a href="https://www.cs.utexas.edu/~sniekum/">Prof. Scott Niekum</a>. 
-                My interests lie at the intersection of Imitation Learning and Human Behavior Modeling. Specifically, 
+                My interests lie at the intersection of Reinforcement Learning, Imitation Learning and modeling human behavior via multimodal interfaces. Specifically, 
                 my research models intentions of human teachers using additional signals such as eye gaze and audio, for improved robot learning from demonstration.
               </p>
               <!--<p>Before coming to UT Austin, I worked for a short while as a Research Associate at the Robotics Institute, Carnegie Mellon University (CMU). Prior to that, I completed my MS in Robotics from CMU where, along with a team of computer vision, medical and design experts, I worked on developing a prototype for a <a href="https://smartrehab.vtc.vt.edu" >home-based stroke rehabilitation system</a>. Before pursuing graduate studies, I completed my undergraduate degree in Computer Science and Engineering from the Indian Institute of Technology, Jodhpur in India.
               </p>-->
               <p style="text-align:center">
                 <a href="mailto:asaran@cs.utexas.edu">Email</a> &nbsp/&nbsp
+                <!--<a href="">Bio</a> &nbsp/&nbsp-->
                 <a href="data/resume.pdf">CV</a> &nbsp/&nbsp
-                <a href="">Bio</a> &nbsp/&nbsp
                 <a href="https://scholar.google.com/citations?user=zZhWSQ0AAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
+                <a href="https://github.com/asaran/">Github</a>&nbsp/&nbsp
                 <a href="https://www.linkedin.com/in/akanksha-saran/">LinkedIn</a> &nbsp/&nbsp
-                <a href="https://twitter.com/AkankshaSaran">Twitter</a> <!--&nbsp/&nbsp
-                <a href="https://github.com/asaran/">Github</a>-->
+                <a href="https://twitter.com/AkankshaSaran">Twitter</a> 
+                
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
@@ -71,7 +72,7 @@
             <li> Invited talk at <a href="https://www.microsoft.com/en-us/research/">Microsoft Research</a>.</li>
             <li> Presented our work on <a href="https://arxiv.org/abs/2002.12500">Efficiently Guiding Imitation Learning Agents with Human Gaze</a> during the Humans and AI session at <a href="https://aamas2021.soton.ac.uk/">AAMAS 2021</a>.</li>
             <li> Invited talk at the <a href="https://sites.google.com/view/realworldhri-workshop/hri21/speakers-schedules?authuser=0">Workshop on Solutions for Socially Intelligent HRI in Real-World Scenarios</a> at <a href="https://humanrobotinteraction.org/2021/">HRI 2021</a>.</li>
-            <li> I served as Program Chair for the <a href="http://www.hripioneers.info/hri21/program_speakers.html">HRI Pioneers workshop</a> at <a href="https://humanrobotinteraction.org/2021/">HRI 2021</a>.</li>
+            <li> I served as a Program Chair for the <a href="http://www.hripioneers.info/hri21/program_speakers.html">HRI Pioneers workshop</a> at <a href="https://humanrobotinteraction.org/2021/">HRI 2021</a>.</li>
             <!--<a href="javascript:toggleblock('news')">---- show more ----</a>
             <div id="news" style="display:none">
             <li> Co-organized the <a href="https://futurecv.github.io/" target="_blank">"Computer Vision After 5 years"</a> workshop at CVPR'19.</li>
@@ -118,7 +119,7 @@
             </td>
             <!-- <td width="67%" valign="top"> -->
               <td style="padding:20px;width:70%;vertical-align:top">
-              <p><a href="https://yuqingd.github.io/autotuned-sim2real/" id="ICRA21">
+              <p><a href="papers/aux_airl.pdf" id="ICMLW21">
               <!-- <img src="images/new.png" alt="[NEW]" width="6%" style="border-style: none"> -->
               <papertitle>Aux-AIRL: End-to-End Self-Supervised Reward Learning for Extrapolating beyond Suboptimal Demonstrations</papertitle></a><br>
               Yuchen Cui, Bo Liu, <b>Akanksha Saran</b>, Stephen Giguere, Peter Stone, Scott Niekum<br>
@@ -128,12 +129,9 @@
               </p>
         
               <div class="paper" id="icra21">
-              <a href="https://yuqingd.github.io/autotuned-sim2real/">webpage</a> |
-              <a href="https://arxiv.org/pdf/2104.07662.pdf">pdf</a> |
-              <a href="javascript:toggleblock('icra21_abs')">abstract</a> |
-              <a shape="rect" href="javascript:togglebib('icra21')" class="togglebib">bibtex</a> |
-              <a href="https://github.com/yuqingd/sim2real2sim_rad">code</a> |
-              <a href="https://youtu.be/NsEvtSxxErQ">demo video</a>
+              <!-- <a href="https://yuqingd.github.io/autotuned-sim2real/">webpage</a> | -->
+              <a href="papers/aux_airl.pdf">pdf</a> |
+              <a href="https://drive.google.com/file/d/1mzCN9X3g4zB6icu_TOc8qKxZHwNTvvEx/view?usp=sharing">poster</a>
               <!-- 
               <p align="justify"> <i id="icra21_abs">Policies trained in simulation often fail when transferred to the real world due to the 'reality gap' where the simulator is unable to sufficiently accurately capture the dynamics and visual properties of the real world. Current approaches to tackle this problem, such as domain randomization, require prior knowledge and engineering to determine how much to randomize system parameters in order to learn a policy that is robust to sim-to-real transfer while also not being too conservative. We propose a method for automatically tuning system parameters of simulator to match the real world using only raw observation images without the need to define rewards or estimate state in the real world itself. Our key insight is to reframe the auto-tuning of parameters as a search problem where we iteratively shift the simulation system parameters to approach the real world system parameters. We propose a Search Param Model (SPM) that, given a sequence of observations and actions and a set of system parameters, predicts whether the parameters are higher or lower than the true parameters used to generate the observations. We evaluate our method on multiple robotic control tasks in both sim-to-sim and sim-to-real transfer, demonstrating significant improvement over the conventional approach of domain randomization.</i></p>
         
@@ -150,7 +148,7 @@
         }
         </pre>-->
               </div>
-              <p>Variational auto-encoders can be used to disentangle a characters style from its content.</p>
+              <!-- <p>Variational auto-encoders can be used to disentangle a characters style from its content.</p> -->
             </td>
           </tr> 
 
@@ -158,10 +156,10 @@
 
           <tr>
             <td style="padding:20px;width:30%;vertical-align:middle">
-            <img src="images/gaze3a.png"></a></td>
+            <img src="images/cgl2.png"></a></td>
             <!-- <td width="67%" valign="top"> -->
               <td style="padding:20px;width:70%;vertical-align:top">
-              <p><a href="https://yuqingd.github.io/autotuned-sim2real/" id="ICRA21">
+              <p><a href="https://arxiv.org/abs/2002.12500" id="AAMAS21">
               <!-- <img src="images/new.png" alt="[NEW]" width="6%" style="border-style: none"> -->
               <papertitle>Efficiently Guiding Imitation Learning Agents with Human Gaze</papertitle></a><br>
               <b>Akanksha Saran</b>, Ruohan Zhang, Elaine Schaertl Short, Scott Niekum<br>
@@ -169,13 +167,16 @@
               <br>Full version: AAMAS 2021
               </p>
         
-              <div class="paper" id="icra21">
-              <a href="https://yuqingd.github.io/autotuned-sim2real/">webpage</a> |
-              <a href="https://arxiv.org/pdf/2104.07662.pdf">pdf</a> |
-              <a href="javascript:toggleblock('icra21_abs')">abstract</a> |
-              <a shape="rect" href="javascript:togglebib('icra21')" class="togglebib">bibtex</a> |
-              <a href="https://github.com/yuqingd/sim2real2sim_rad">code</a> |
-              <a href="https://youtu.be/NsEvtSxxErQ">demo video</a>
+              <div class="paper" id="aamas21">
+              <!-- <a href="https://yuqingd.github.io/autotuned-sim2real/">webpage</a> | -->
+              <a href="https://arxiv.org/pdf/2002.12500.pdf">pdf</a> |
+              <!-- <a href="javascript:toggleblock('icra21_abs')">abstract</a> | -->
+              <!-- <a shape="rect" href="javascript:togglebib('icra21')" class="togglebib">bibtex</a> | -->
+              <!-- <a href="https://github.com/yuqingd/sim2real2sim_rad">code</a> | -->
+              <a href="https://drive.google.com/file/d/1bvfnkqFGF8O39yaF1QOcvhrOx2CpZyxX/view?usp=sharing">slides</a> |
+              <a href="phttps://drive.google.com/file/d/1tMnPpqOTG7Jxy34ARQVjAJtSArqLTRw6/view?usp=sharing">spotlight</a> |
+              <a href="https://drive.google.com/file/d/1tq07PhWvUAN1-GyGlPh-j9QBGT_gg2tr/view?usp=sharing">demo video</a> |
+              <a href="https://techxplore.com/news/2020-03-imitation-algorithms-human.html">media</a>
               <!-- 
               <p align="justify"> <i id="icra21_abs">Policies trained in simulation often fail when transferred to the real world due to the 'reality gap' where the simulator is unable to sufficiently accurately capture the dynamics and visual properties of the real world. Current approaches to tackle this problem, such as domain randomization, require prior knowledge and engineering to determine how much to randomize system parameters in order to learn a policy that is robust to sim-to-real transfer while also not being too conservative. We propose a method for automatically tuning system parameters of simulator to match the real world using only raw observation images without the need to define rewards or estimate state in the real world itself. Our key insight is to reframe the auto-tuning of parameters as a search problem where we iteratively shift the simulation system parameters to approach the real world system parameters. We propose a Search Param Model (SPM) that, given a sequence of observations and actions and a set of system parameters, predicts whether the parameters are higher or lower than the true parameters used to generate the observations. We evaluate our method on multiple robotic control tasks in both sim-to-sim and sim-to-real transfer, demonstrating significant improvement over the conventional approach of domain randomization.</i></p>
         
@@ -192,7 +193,7 @@
         }
         </pre>-->
               </div>
-              <p>Variational auto-encoders can be used to disentangle a characters style from its content.</p>
+              <!-- <p>Variational auto-encoders can be used to disentangle a characters style from its content.</p> -->
             </td>
           </tr> 
 
@@ -201,23 +202,23 @@
 
           <tr>
             <td style="padding:20px;width:30%;vertical-align:middle">
-            <img src="images/survey.png"></a></td>
+            <img src="images/survey2.png"></a></td>
             <!-- <td width="67%" valign="top"> -->
               <td style="padding:20px;width:70%;vertical-align:top">
-              <p><a href="https://yuqingd.github.io/autotuned-sim2real/" id="ICRA21">
+              <p><a href="https://www.ijcai.org/Proceedings/2020/0689.pdf" id="IJCAI20">
               <!-- <img src="images/new.png" alt="[NEW]" width="6%" style="border-style: none"> -->
               <papertitle>Human Gaze Assisted Artificial Intelligence: A Review</papertitle></a><br>
               Ruohan Zhang, <b>Akanksha Saran</b>, Bo Liu, Yifeng Zhu, Sihang Guo, <br>Scott Niekum, Dana H. Ballard, Mary M. Hayhoe<br>
               IJCAI 2020
               </p>
         
-              <div class="paper" id="icra21">
-              <a href="https://yuqingd.github.io/autotuned-sim2real/">webpage</a> |
-              <a href="https://arxiv.org/pdf/2104.07662.pdf">pdf</a> |
-              <a href="javascript:toggleblock('icra21_abs')">abstract</a> |
-              <a shape="rect" href="javascript:togglebib('icra21')" class="togglebib">bibtex</a> |
-              <a href="https://github.com/yuqingd/sim2real2sim_rad">code</a> |
-              <a href="https://youtu.be/NsEvtSxxErQ">demo video</a>
+              <div class="paper" id="ijcai20">
+              <!-- <a href="https://yuqingd.github.io/autotuned-sim2real/">webpage</a> | -->
+              <a href="https://www.ijcai.org/Proceedings/2020/0689.pdf">pdf</a> |
+              <!-- <a href="javascript:toggleblock('icra21_abs')">abstract</a> | -->
+              <!-- <a shape="rect" href="javascript:togglebib('icra21')" class="togglebib">bibtex</a> | -->
+              <!-- <a href="https://github.com/yuqingd/sim2real2sim_rad">code</a> | -->
+              <!-- <a href="https://youtu.be/NsEvtSxxErQ">demo video</a> -->
               <!-- 
               <p align="justify"> <i id="icra21_abs">Policies trained in simulation often fail when transferred to the real world due to the 'reality gap' where the simulator is unable to sufficiently accurately capture the dynamics and visual properties of the real world. Current approaches to tackle this problem, such as domain randomization, require prior knowledge and engineering to determine how much to randomize system parameters in order to learn a policy that is robust to sim-to-real transfer while also not being too conservative. We propose a method for automatically tuning system parameters of simulator to match the real world using only raw observation images without the need to define rewards or estimate state in the real world itself. Our key insight is to reframe the auto-tuning of parameters as a search problem where we iteratively shift the simulation system parameters to approach the real world system parameters. We propose a Search Param Model (SPM) that, given a sequence of observations and actions and a set of system parameters, predicts whether the parameters are higher or lower than the true parameters used to generate the observations. We evaluate our method on multiple robotic control tasks in both sim-to-sim and sim-to-real transfer, demonstrating significant improvement over the conventional approach of domain randomization.</i></p>
         
@@ -234,7 +235,7 @@
         }
         </pre>-->
               </div>
-              <p>Variational auto-encoders can be used to disentangle a characters style from its content.</p>
+              <!-- <p>Variational auto-encoders can be used to disentangle a characters style from its content.</p> -->
             </td>
           </tr> 
 
@@ -246,7 +247,7 @@
             <img src="images/gaze2a.png"></a></td>
             <!-- <td width="67%" valign="top"> -->
               <td style="padding:20px;width:70%;vertical-align:top">
-              <p><a href="https://yuqingd.github.io/autotuned-sim2real/" id="ICRA21">
+              <p><a href="https://arxiv.org/abs/1907.07202v3" id="CoRL19">
               <!-- <img src="images/new.png" alt="[NEW]" width="6%" style="border-style: none"> -->
               <papertitle>Understanding Teacher Gaze Patterns for Robot Learning</papertitle></a><br>
               <b>Akanksha Saran</b>, Elaine Schaertl Short, Andrea Thomaz, Scott Niekum
@@ -255,12 +256,15 @@
               </p>
         
               <div class="paper" id="icra21">
-              <a href="https://yuqingd.github.io/autotuned-sim2real/">webpage</a> |
-              <a href="https://arxiv.org/pdf/2104.07662.pdf">pdf</a> |
-              <a href="javascript:toggleblock('icra21_abs')">abstract</a> |
-              <a shape="rect" href="javascript:togglebib('icra21')" class="togglebib">bibtex</a> |
-              <a href="https://github.com/yuqingd/sim2real2sim_rad">code</a> |
-              <a href="https://youtu.be/NsEvtSxxErQ">demo video</a>
+              <!-- <a href="https://yuqingd.github.io/autotuned-sim2real/">webpage</a> | -->
+              <a href="https://arxiv.org/pdf/1907.07202v3.pdf">pdf</a> |
+              <!-- <a href="javascript:toggleblock('icra21_abs')">abstract</a> | -->
+              <!-- <a shape="rect" href="javascript:togglebib('icra21')" class="togglebib">bibtex</a> | -->
+              <a href="https://drive.google.com/open?id=1AeZ5qIG3KdYQStsPD096cE2_6t-ppiV4">code</a> |
+              <a href="https://docs.google.com/presentation/d/1UG1iaLKOIfBkvDsjFbHnpo-gOR6LeFdW/edit?usp=sharing&ouid=108019005608041300274&rtpof=true&sd=true">slides</a> |
+              <a href="posters/corl2019_poster.pdf">poster</a> |
+              <a href="https://youtu.be/b7StSnt85S4?t=12240">talk video</a> |
+              <a href="https://www.youtube.com/watch?v=FiCJRD-YluQ">demo video</a>
               <!-- 
               <p align="justify"> <i id="icra21_abs">Policies trained in simulation often fail when transferred to the real world due to the 'reality gap' where the simulator is unable to sufficiently accurately capture the dynamics and visual properties of the real world. Current approaches to tackle this problem, such as domain randomization, require prior knowledge and engineering to determine how much to randomize system parameters in order to learn a policy that is robust to sim-to-real transfer while also not being too conservative. We propose a method for automatically tuning system parameters of simulator to match the real world using only raw observation images without the need to define rewards or estimate state in the real world itself. Our key insight is to reframe the auto-tuning of parameters as a search problem where we iteratively shift the simulation system parameters to approach the real world system parameters. We propose a Search Param Model (SPM) that, given a sequence of observations and actions and a set of system parameters, predicts whether the parameters are higher or lower than the true parameters used to generate the observations. We evaluate our method on multiple robotic control tasks in both sim-to-sim and sim-to-real transfer, demonstrating significant improvement over the conventional approach of domain randomization.</i></p>
         
@@ -277,7 +281,7 @@
         }
         </pre>-->
               </div>
-              <p>Variational auto-encoders can be used to disentangle a characters style from its content.</p>
+              <!-- <p>Variational auto-encoders can be used to disentangle a characters style from its content.</p> -->
             </td>
           </tr> 
 
@@ -286,10 +290,10 @@
 
           <tr>
             <td style="padding:20px;width:30%;vertical-align:middle">
-            <img src="images/gaze1a.png"></a></td>
+            <img src="images/gaze_follow.png"></a></td>
             <!-- <td width="67%" valign="top"> -->
               <td style="padding:20px;width:70%;vertical-align:top">
-              <p><a href="https://yuqingd.github.io/autotuned-sim2real/" id="ICRA21">
+              <p><a href="papers/iros2018.pdf" id="ICRA21">
               <!-- <img src="images/new.png" alt="[NEW]" width="6%" style="border-style: none"> -->
               <papertitle>Human Gaze Following for Human-Robot Interaction</papertitle></a><br>
               <b>Akanksha Saran</b>, Srinjoy Majumdar, Elaine Schaertl Short, Andrea Thomaz, Scott Niekum
@@ -298,12 +302,13 @@
               </p>
         
               <div class="paper" id="icra21">
-              <a href="https://yuqingd.github.io/autotuned-sim2real/">webpage</a> |
-              <a href="https://arxiv.org/pdf/2104.07662.pdf">pdf</a> |
-              <a href="javascript:toggleblock('icra21_abs')">abstract</a> |
-              <a shape="rect" href="javascript:togglebib('icra21')" class="togglebib">bibtex</a> |
-              <a href="https://github.com/yuqingd/sim2real2sim_rad">code</a> |
-              <a href="https://youtu.be/NsEvtSxxErQ">demo video</a>
+              <!-- <a href="https://yuqingd.github.io/autotuned-sim2real/">webpage</a> | -->
+              <a href="papers/iros2018.pdf">pdf</a> |
+              <!-- <a href="javascript:toggleblock('icra21_abs')">abstract</a> | -->
+              <!-- <a shape="rect" href="javascript:togglebib('icra21')" class="togglebib">bibtex</a> | -->
+              <a href="https://github.com/Pearl-UTexas/gaze_tracker">code</a> |
+              <a href="https://drive.google.com/file/d/1U6cEqJhFFj5Yq31o8LfOeibX-N8TRQug/view">talk video</a> |
+              <a href="https://www.youtube.com/watch?v=zTZSpEcpW_A">demo video</a>
               <!-- 
               <p align="justify"> <i id="icra21_abs">Policies trained in simulation often fail when transferred to the real world due to the 'reality gap' where the simulator is unable to sufficiently accurately capture the dynamics and visual properties of the real world. Current approaches to tackle this problem, such as domain randomization, require prior knowledge and engineering to determine how much to randomize system parameters in order to learn a policy that is robust to sim-to-real transfer while also not being too conservative. We propose a method for automatically tuning system parameters of simulator to match the real world using only raw observation images without the need to define rewards or estimate state in the real world itself. Our key insight is to reframe the auto-tuning of parameters as a search problem where we iteratively shift the simulation system parameters to approach the real world system parameters. We propose a Search Param Model (SPM) that, given a sequence of observations and actions and a set of system parameters, predicts whether the parameters are higher or lower than the true parameters used to generate the observations. We evaluate our method on multiple robotic control tasks in both sim-to-sim and sim-to-real transfer, demonstrating significant improvement over the conventional approach of domain randomization.</i></p>
         
@@ -320,7 +325,7 @@
         }
         </pre>-->
               </div>
-              <p>Variational auto-encoders can be used to disentangle a characters style from its content.</p>
+              <!-- <p>Variational auto-encoders can be used to disentangle a characters style from its content.</p> -->
             </td>
           </tr> 
 
@@ -332,20 +337,21 @@
             <img src="images/viewpoint2.png"></a></td>
             <!-- <td width="67%" valign="top"> -->
               <td style="padding:20px;width:70%;vertical-align:top">
-              <p><a href="https://yuqingd.github.io/autotuned-sim2real/" id="ICRA21">
+              <p><a href="papers/iros2017.pdf" id="IROS17">
               <!-- <img src="images/new.png" alt="[NEW]" width="6%" style="border-style: none"> -->
               <papertitle>Viewpoint Selection for Visual Failure Detection</papertitle></a><br>
               <b>Akanksha Saran</b>, Branka Lakic, Srinjoy Majumdar, Juergen Hess, Scott Niekum
               <br>IROS 2017
               </p>
         
-              <div class="paper" id="icra21">
-              <a href="https://yuqingd.github.io/autotuned-sim2real/">webpage</a> |
-              <a href="https://arxiv.org/pdf/2104.07662.pdf">pdf</a> |
-              <a href="javascript:toggleblock('icra21_abs')">abstract</a> |
-              <a shape="rect" href="javascript:togglebib('icra21')" class="togglebib">bibtex</a> |
-              <a href="https://github.com/yuqingd/sim2real2sim_rad">code</a> |
-              <a href="https://youtu.be/NsEvtSxxErQ">demo video</a>
+              <div class="paper" id="iros17">
+              <!-- <a href="https://yuqingd.github.io/autotuned-sim2real/">webpage</a> | -->
+              <a href="papers/iros2017.pdf">pdf</a> |
+              <!-- <a href="javascript:toggleblock('icra21_abs')">abstract</a> | -->
+              <!-- <a shape="rect" href="javascript:togglebib('iros17')" class="togglebib">bibtex</a> | -->
+              <!-- <a href="https://github.com/yuqingd/sim2real2sim_rad">code</a> | -->
+              <a href="https://drive.google.com/file/d/1xVbWqnp0fQGa6W7Jc8xPYReAZ2RTQV8P/view?usp=sharing">slides</a> |
+              <a href="https://drive.google.com/file/d/1ORHby7ivWtQdoI2lFLyocvLfFu-MMcHa/view?usp=sharing">spotlight</a>
               <!-- 
               <p align="justify"> <i id="icra21_abs">Policies trained in simulation often fail when transferred to the real world due to the 'reality gap' where the simulator is unable to sufficiently accurately capture the dynamics and visual properties of the real world. Current approaches to tackle this problem, such as domain randomization, require prior knowledge and engineering to determine how much to randomize system parameters in order to learn a policy that is robust to sim-to-real transfer while also not being too conservative. We propose a method for automatically tuning system parameters of simulator to match the real world using only raw observation images without the need to define rewards or estimate state in the real world itself. Our key insight is to reframe the auto-tuning of parameters as a search problem where we iteratively shift the simulation system parameters to approach the real world system parameters. We propose a Search Param Model (SPM) that, given a sequence of observations and actions and a set of system parameters, predicts whether the parameters are higher or lower than the true parameters used to generate the observations. We evaluate our method on multiple robotic control tasks in both sim-to-sim and sim-to-real transfer, demonstrating significant improvement over the conventional approach of domain randomization.</i></p>
         
@@ -362,32 +368,32 @@
         }
         </pre>-->
               </div>
-              <p>Variational auto-encoders can be used to disentangle a characters style from its content.</p>
+              <!-- <p>Variational auto-encoders can be used to disentangle a characters style from its content.</p> -->
             </td>
           </tr> 
 
          
           <tr>
             <td style="padding:20px;width:30%;vertical-align:middle">
-            <img src="images/hands.png"></a></td>
+            <img src="images/hands.jpeg"></a></td>
             <!-- <td width="67%" valign="top"> -->
               <td style="padding:20px;width:70%;vertical-align:top">
-              <p><a href="https://yuqingd.github.io/autotuned-sim2real/" id="ICRA21">
+              <p><a href="papers/iros2015.pdf" id="IROS15">
               <!-- <img src="images/new.png" alt="[NEW]" width="6%" style="border-style: none"> -->
               <papertitle>Hand Parsing for Fine-Grained Recognition of Human Grasps in Monocular Images</papertitle></a><br>
               <b>Akanksha Saran</b>, Damien Teney, Kris Kitani
               <br>IROS 2015
               </p>
         
-              <div class="paper" id="icra21">
-              <a href="https://yuqingd.github.io/autotuned-sim2real/">webpage</a> |
-              <a href="https://arxiv.org/pdf/2104.07662.pdf">pdf</a> |
-              <a href="javascript:toggleblock('icra21_abs')">abstract</a> |
-              <a shape="rect" href="javascript:togglebib('icra21')" class="togglebib">bibtex</a> |
-              <a href="https://github.com/yuqingd/sim2real2sim_rad">code</a> |
-              <a href="https://youtu.be/NsEvtSxxErQ">demo video</a>
-              <!-- 
-              <p align="justify"> <i id="icra21_abs">Policies trained in simulation often fail when transferred to the real world due to the 'reality gap' where the simulator is unable to sufficiently accurately capture the dynamics and visual properties of the real world. Current approaches to tackle this problem, such as domain randomization, require prior knowledge and engineering to determine how much to randomize system parameters in order to learn a policy that is robust to sim-to-real transfer while also not being too conservative. We propose a method for automatically tuning system parameters of simulator to match the real world using only raw observation images without the need to define rewards or estimate state in the real world itself. Our key insight is to reframe the auto-tuning of parameters as a search problem where we iteratively shift the simulation system parameters to approach the real world system parameters. We propose a Search Param Model (SPM) that, given a sequence of observations and actions and a set of system parameters, predicts whether the parameters are higher or lower than the true parameters used to generate the observations. We evaluate our method on multiple robotic control tasks in both sim-to-sim and sim-to-real transfer, demonstrating significant improvement over the conventional approach of domain randomization.</i></p>
+              <div class="paper" id="iros15">
+              <!-- <a href="https://yuqingd.github.io/autotuned-sim2real/">webpage</a> | -->
+              <a href="papers/iros2015.pdf">pdf</a> |
+              <!-- <a href="javascript:toggleblock('icra21_abs')">abstract</a> | -->
+              <!-- <a shape="rect" href="javascript:togglebib('icra21')" class="togglebib">bibtex</a> | -->
+              <!-- <a href="https://github.com/yuqingd/sim2real2sim_rad">code</a> | -->
+              <a href="">slides</a>
+              
+              <!-- <p align="justify"> <i id="icra21_abs">Policies trained in simulation often fail when transferred to the real world due to the 'reality gap' where the simulator is unable to sufficiently accurately capture the dynamics and visual properties of the real world. Current approaches to tackle this problem, such as domain randomization, require prior knowledge and engineering to determine how much to randomize system parameters in order to learn a policy that is robust to sim-to-real transfer while also not being too conservative. We propose a method for automatically tuning system parameters of simulator to match the real world using only raw observation images without the need to define rewards or estimate state in the real world itself. Our key insight is to reframe the auto-tuning of parameters as a search problem where we iteratively shift the simulation system parameters to approach the real world system parameters. We propose a Search Param Model (SPM) that, given a sequence of observations and actions and a set of system parameters, predicts whether the parameters are higher or lower than the true parameters used to generate the observations. We evaluate our method on multiple robotic control tasks in both sim-to-sim and sim-to-real transfer, demonstrating significant improvement over the conventional approach of domain randomization.</i></p>
         
         <pre xml:space="preserve">
         @article{du2021autotuned,
@@ -400,9 +406,9 @@
           journal= {ICRA},
           year   = {2021}
         }
-        </pre>-->
+        </pre> -->
               </div>
-              <p>Variational auto-encoders can be used to disentangle a characters style from its content.</p>
+              <!-- <p>Variational auto-encoders can be used to disentangle a characters style from its content.</p> -->
             </td>
           </tr>   
 
@@ -415,7 +421,6 @@
             <td style="padding:0px">
               <br>
               <p style="text-align:right;font-size:small;">
-                
                 Modified version of template from <a style="font-size:small;" href="https://jonbarron.info/">this</a> and <a href="https://www.cs.cmu.edu/~dpathak/">this</a>.
               </p>
             </td>
