@@ -145,6 +145,7 @@
             <heading>&nbsp;&nbsp;News</heading>
             <ul>
             <!--<li> Feb 2022: New preprint available on <a href="https://arxiv.org/abs/2202.03481">A Ranking Game for Imitation Learning</a>.</li> -->
+            <li> New work on <a href="papers/AI-IGL.pdf">Interaction Grounded Learning with Action-Inclusive Feedback</a> will be presented at the <a href="https://cfol-workshop.github.io">Workshop on Complex Feedback in Online Learning</a> at ICML 2022.</li>
             <li> I moved to New York City and started my postdoc at MSR NYC!</li>
             <li> Invited as a panelist for the <a href="https://twitter.com/iitjodhpur/status/1466732355280801794">2021 Undergraduate Orientation</a> at my alma mater <a href="https://iitj.ac.in/">IIT Jodhpur</a>.</li>
             <li> Defended my PhD dissertation on Leveraging Multimodal Human Cues for Enhanced Robot Learning from Demonstration!</li>
@@ -209,25 +210,63 @@
         </style>
         <table class="research-table container-wide"  style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-
           
+          <tr>
+            <!--Update the width:30% and width:70% for text and images to the required proportions-->
+            <td style="padding:20px;width:10%;vertical-align:top">
+              <a href="images/ai-igl2.png">  <img src="images/ai-igl2.png"></a></td>
+              <td style="padding:20px;width:70%;vertical-align:top">
+              <p><a href="papers/" id="ai-igl-arxiv22">
+              <papertitle>Interaction Grounded Learning with Action-Inclusive Feedback</papertitle></a><br>
+              Tengyang Xie<sup>*</sup>, <b>Akanksha Saran</b><sup>*</sup>, Dylan Foster, Lekan Molu, Ida Momennejad, Nan Jiang, Paul Mineiro, John Langford<br>
+              <br>Short version: Workshop on Complex Feedback for Online Learning, ICML 2022
+              </p>
+        
+              <div class="paper" id="ai-igl-arxiv22">
+              <a href="papers/AI-IGL.pdf">pdf</a> |
+              <a href="javascript:toggleblock('ai-igl-arxiv22-abstract')">abstract</a> |
+              <a shape="rect" href="javascript:toggleblock('ai-igl-arxiv22-bibtex')" class="togglebib">bibtex</a> 
+              
+              <p align="justify"> <i id="ai-igl-arxiv22-abstract" class="hidden">Consider the problem setting of Interaction-Grounded Learning 
+                (IGL), in which a learner's goal is to optimally interact with the environment with no explicit reward to ground its policies. 
+                The agent observes a context vector, takes an action, and receives a feedback vector, using this information to effectively 
+                optimize a policy with respect to a latent reward function. Prior analyzed approaches fail when the feedback vector contains 
+                the action, which significantly limits IGL&#39;s success in many potential scenarios such as Brain-computer interface (BCI) 
+                or Human-computer interface (HCI) applications. We address this by creating an algorithm and analysis which allows IGL to 
+                work even when the feedback vector contains the action, encoded in any fashion. We provide theoretical guarantees and 
+                large-scale experiments based on supervised datasets to demonstrate the effectiveness of the new approach. </i></p>
+        
+                <pre xml:space="preserve" id="ai-igl-arxiv22-bibtex" class="hidden">
+@article{xie2022interaction,
+  title={Interaction Grounded Learning with Action-Inclusive Feedback},
+  author={Xie, Tengyang and Saran, Akanksha and Foster, Dylan and <br>&emsp;&emsp;Molu, Lekan and Momennejad, Ida and Jiang, Nan <br>&emsp;&emsp;and Mineiro, Paul and Langford, John},
+  booktitle={Proceedings of the ICML Workshop on <br>&emsp;&emsp;Complex Feedback for Online Learning},
+  year={2022}
+}
+                </pre>
+              </div>
+              <p>An algorithm (AI-IGL) that learns to interpret signals from a controller in an interactive loop without any formal calibration of signal to control
+                ---leveraging high-dimensional implicit feedback which can include the action information, but no explicit reward is available.</p>
+            </td>
+          </tr> 
+
           <tr>
             <!--Update the width:30% and width:70% for text and images to the required proportions-->
             <td style="padding:20px;width:30%;vertical-align:top">
               <a href="images/rank-game.png">  <img src="images/rank-game.png"></a></td>
               <td style="padding:20px;width:70%;vertical-align:top">
-              <p><a href="https://arxiv.org/abs/2202.03481" id="arxiv22">
+              <p><a href="https://arxiv.org/abs/2202.03481" id="rank-game-arxiv22">
               <papertitle>A Ranking Game for Imitation Learning</papertitle></a><br>
               Harshit Sikchi, <b>Akanksha Saran</b>, Wonjoon Goo, Scott Niekum
               <br>arXiv 2022
               </p>
         
-              <div class="paper" id="arxiv22">
+              <div class="paper" id="rank-game-arxiv22">
               <a href="https://arxiv.org/pdf/2202.03481.pdf">pdf</a> |
-              <a href="javascript:toggleblock('arxiv22-abstract')">abstract</a> |
-              <a shape="rect" href="javascript:toggleblock('arxiv22-bibtex')" class="togglebib">bibtex</a> 
+              <a href="javascript:toggleblock('rank-game-arxiv22-abstract')">abstract</a> |
+              <a shape="rect" href="javascript:toggleblock('rank-game-arxiv22-bibtex')" class="togglebib">bibtex</a> 
               
-              <p align="justify"> <i id="arxiv22-abstract" class="hidden">We propose a new framework for imitation learning — treating imitation as a two-player rankingbased Stackelberg game between a policy and a
+              <p align="justify"> <i id="rank-game-arxiv22-abstract" class="hidden">We propose a new framework for imitation learning — treating imitation as a two-player rankingbased Stackelberg game between a policy and a
                 reward function. In this game, the reward agent
                 learns to satisfy pairwise performance rankings
                 within a set of policies, while the policy agent
@@ -244,7 +283,7 @@
                 able to solve previously unsolvable tasks in the
                 Learning from Observation (LfO) setting. </i></p>
         
-                <pre xml:space="preserve" id="arxiv22-bibtex" class="hidden">
+                <pre xml:space="preserve" id="rank-game-arxiv22-bibtex" class="hidden">
 @article{sikchi2022ranking,
   title={A Ranking Game for Imitation Learning},
   author={Sikchi, Harshit and Saran, Akanksha and Goo,<br>&emsp;&emsp;Wonjoon and Niekum, Scott},
@@ -256,6 +295,7 @@
               <p>Treating imitation learning as a two-player ranking game between a policy and a reward function can solve previously unsolvable tasks in the Learning from Observation (LfO) setting.</p>
             </td>
           </tr>   
+  
 
 
           <tr>
