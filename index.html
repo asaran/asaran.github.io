@@ -42,34 +42,28 @@
   </style>
 
     <script type="text/javascript">
-      const BlockToggler = function() {
-        let activeBlock = null
-        function toggleblock(selector) {
-          console.log('toggleblock', selector)
-          if (activeBlock) {
-            document.getElementById(activeBlock).style.display = 'none'
-          }
-          activeBlock = selector
-          document.getElementById(selector).style.display = 'block'
-        }
-
-
-        return {
-          toggleblock
-        }
-      }
-
       let activeBlock = null
-      function toggleblock(selector) {
-        console.log('toggleblock', selector)
+      let $hiddenParaBlock = null
+      function toggleblock(selector, descParaSelector) {
+        let $descPara = descParaSelector ? document.getElementById(descParaSelector) : null
         if (activeBlock) {
           document.getElementById(activeBlock).style.display = 'none'
         }
         document.getElementById(selector).style.display = selector === activeBlock ? 'none' : 'block'
         if (activeBlock === selector) {
           activeBlock = null
+          if ($descPara) {
+            $descPara.style.display = 'block'
+          }
         } else {
           activeBlock = selector
+          if ($hiddenParaBlock && $hiddenParaBlock !== $descPara) {
+            $hiddenParaBlock.style.display = 'block'
+          }
+          if ($descPara) {
+            $descPara.style.display = 'none'
+            $hiddenParaBlock = $descPara
+          }
         }
       }
 
@@ -205,7 +199,7 @@
          }
 
          .research-table td {
-           width: 100% !important;
+           width: 98% !important;
            padding: 5px !important;
          }
        }
@@ -226,8 +220,8 @@
         
               <div class="paper" id="ai-igl-arxiv22">
               <a href="https://arxiv.org/pdf/2206.08364.pdf">pdf</a> |
-              <a href="javascript:toggleblock('ai-igl-arxiv22-abstract')">abstract</a> |
-              <a shape="rect" href="javascript:toggleblock('ai-igl-arxiv22-bibtex')" class="togglebib">bibtex</a> 
+              <a href="javascript:toggleblock('ai-igl-arxiv22-abstract', 'ai-igl-arxiv22-desc')">abstract</a> |
+              <a shape="rect" href="javascript:toggleblock('ai-igl-arxiv22-bibtex', 'ai-igl-arxiv22-desc')" class="togglebib">bibtex</a> 
               
               <p align="justify"> <i id="ai-igl-arxiv22-abstract" class="hidden">Consider the problem setting of Interaction-Grounded Learning 
                 (IGL), in which a learner's goal is to optimally interact with the environment with no explicit reward to ground its policies. 
@@ -247,7 +241,7 @@
 }
                 </pre>
               </div>
-              <p>An algorithm (AI-IGL) that learns to interpret signals from a controller in an interactive loop without any formal calibration of signal to control
+              <p id="ai-igl-arxiv22-desc">An algorithm (AI-IGL) that learns to interpret signals from a controller in an interactive loop without any formal calibration of signal to control
               --- leveraging implicit feedback which can include the action information, but no explicit rewards are available.</p>
             </td>
           </tr> 
@@ -265,8 +259,8 @@
         
               <div class="paper" id="rank-game-arxiv22">
               <a href="https://arxiv.org/pdf/2202.03481.pdf">pdf</a> |
-              <a href="javascript:toggleblock('rank-game-arxiv22-abstract')">abstract</a> |
-              <a shape="rect" href="javascript:toggleblock('rank-game-arxiv22-bibtex')" class="togglebib">bibtex</a> 
+              <a href="javascript:toggleblock('rank-game-arxiv22-abstract', 'rank-game-arxiv22-desc')">abstract</a> |
+              <a shape="rect" href="javascript:toggleblock('rank-game-arxiv22-bibtex', 'rank-game-arxiv22-desc')" class="togglebib">bibtex</a> 
               
               <p align="justify"> <i id="rank-game-arxiv22-abstract" class="hidden">We propose a new framework for imitation learning — treating imitation as a two-player rankingbased Stackelberg game between a policy and a
                 reward function. In this game, the reward agent
@@ -294,7 +288,7 @@
 }
                 </pre>
               </div>
-              <p>Treating imitation learning as a two-player ranking game between a policy and a reward function can solve previously unsolvable tasks in the Learning from Observation (LfO) setting.</p>
+              <p id="rank-game-arxiv22-desc">Treating imitation learning as a two-player ranking game between a policy and a reward function can solve previously unsolvable tasks in the Learning from Observation (LfO) setting.</p>
             </td>
           </tr>   
   
@@ -312,8 +306,8 @@
         
               <div class="paper" id="icmlw21">
               <a href="papers/aux_airl.pdf">pdf</a> |
-              <a href="javascript:toggleblock('icmlw21-abstract')">abstract</a> |
-              <a shape="rect" href="javascript:toggleblock('icmlw21-bibtex')" class="togglebib">bibtex</a> |
+              <a href="javascript:toggleblock('icmlw21-abstract', 'icmlw21-desc')">abstract</a> |
+              <a shape="rect" href="javascript:toggleblock('icmlw21-bibtex', 'icmlw21-desc')" class="togglebib">bibtex</a> |
               <a href="https://drive.google.com/file/d/1mzCN9X3g4zB6icu_TOc8qKxZHwNTvvEx/view?usp=sharing">poster</a>
               
               <p align="justify"> <i id="icmlw21-abstract" class="hidden">Real-world human demonstrations are often suboptimal. How to extrapolate beyond suboptimal
@@ -330,7 +324,7 @@
 }
                 </pre>
               </div>
-              <p>An end-to-end self-supervised reward learning method that extrapolates beyond suboptimal demonstrations.</p>
+              <p id="icmlw21-desc">An end-to-end self-supervised reward learning method that extrapolates beyond suboptimal demonstrations.</p>
             </td>
           </tr>   
 
@@ -350,8 +344,8 @@
         
               <div class="paper" id="aamas21">
               <a href="https://arxiv.org/pdf/2002.12500.pdf">pdf</a> |
-              <a href="javascript:toggleblock('aamas21-abstract')">abstract</a> |
-              <a shape="rect" href="javascript:toggleblock('aamas21-bibtex')" class="togglebib">bibtex</a> |
+              <a href="javascript:toggleblock('aamas21-abstract', 'aamas21-desc')">abstract</a> |
+              <a shape="rect" href="javascript:toggleblock('aamas21-bibtex', 'aamas21-desc')" class="togglebib">bibtex</a> |
               <a href="https://github.com/asaran/IL-CGL">code</a> |
               <a href="https://drive.google.com/file/d/1bvfnkqFGF8O39yaF1QOcvhrOx2CpZyxX/view?usp=sharing">slides</a> |
               <a href="https://drive.google.com/file/d/1tMnPpqOTG7Jxy34ARQVjAJtSArqLTRw6/view?usp=sharing">spotlight</a> |
@@ -370,7 +364,7 @@
                 </pre>
               </div>
               <!-- <p>Human demonstrators' gaze used as a cue to inform which visual elements of the scene are important for decision-making.</p> -->
-              <p>Human demonstrators' overt visual attention can be used as a supervisory signal to guide imitation learning agents during training, such that they <i>at least</i> attend to visual features considered important by the demonstrator.</p>
+              <p id="aamas21-desc">Human demonstrators' overt visual attention can be used as a supervisory signal to guide imitation learning agents during training, such that they <i>at least</i> attend to visual features considered important by the demonstrator.</p>
             </td>
           </tr> 
 
@@ -389,8 +383,8 @@
         
               <div class="paper" id="ijcai20">
               <a href="https://www.ijcai.org/Proceedings/2020/0689.pdf">pdf</a> |
-              <a href="javascript:toggleblock('ijcai20-abstract')">abstract</a> |
-              <a shape="rect" href="javascript:toggleblock('ijcai20-bibtex')" class="togglebib">bibtex</a> 
+              <a href="javascript:toggleblock('ijcai20-abstract', 'ijcai20-desc')">abstract</a> |
+              <a shape="rect" href="javascript:toggleblock('ijcai20-bibtex', 'ijcai20-desc')" class="togglebib">bibtex</a> 
               
               <p align="justify"> <i id="ijcai20-abstract" class="hidden">Human gaze reveals a wealth of information about
                 internal cognitive state. Thus, gaze-related research
@@ -412,7 +406,7 @@
 }
                 </pre>
               </div>
-              <p>A survey paper summarizing gaze-related research in computer vision, natural language processing, decision learning, and
+              <p id="ijcai20-desc">A survey paper summarizing gaze-related research in computer vision, natural language processing, decision learning, and
                 robotics in recent years.</p>
             </td>
           </tr> 
@@ -433,8 +427,8 @@
         
               <div class="paper" id="corl19">
               <a href="https://arxiv.org/pdf/1907.07202v4.pdf">pdf</a> |
-              <a href="javascript:toggleblock('corl19-abstract')">abstract</a> |
-              <a shape="rect" href="javascript:toggleblock('corl19-bibtex')" class="togglebib">bibtex</a> |
+              <a href="javascript:toggleblock('corl19-abstract', 'corl19-desc')">abstract</a> |
+              <a shape="rect" href="javascript:toggleblock('corl19-bibtex', 'corl19-desc')" class="togglebib">bibtex</a> |
               <a href="https://github.com/asaran/gaze-LfD">code</a> |
               <a href="https://docs.google.com/presentation/d/1UG1iaLKOIfBkvDsjFbHnpo-gOR6LeFdW/edit?usp=sharing&ouid=108019005608041300274&rtpof=true&sd=true">slides</a> |
               <a href="posters/corl2019_poster.pdf">poster</a> |
@@ -455,7 +449,7 @@
                 </pre>
               </div>
               <!-- <p>Human teachers demonstrating goal-oriented manipulation tasks to robots fixate more of their eye gaze movements on objects important for the manipulation in comparison to other objects in the scene. Incorporating this finding during subtask classification and bayesian inverse reinforcement learning improves performance of these learning algorithms.</p> -->
-              <p>Incorporating eye gaze information of human teachers demonstrating goal-oriented manipulation tasks to robots improves perfomance of subtask classification and bayesian inverse reinforcement learning.</p>
+              <p id="corl19-desc">Incorporating eye gaze information of human teachers demonstrating goal-oriented manipulation tasks to robots improves perfomance of subtask classification and bayesian inverse reinforcement learning.</p>
             </td>
           </tr> 
 
@@ -475,8 +469,8 @@
         
               <div class="paper" id="icra21">
               <a href="papers/iros2018.pdf">pdf</a> |
-              <a href="javascript:toggleblock('iros18-abstract')">abstract</a> |
-              <a shape="rect" href="javascript:toggleblock('iros18-bibtex')" class="togglebib">bibtex</a> |
+              <a href="javascript:toggleblock('iros18-abstract', 'iros18-desc')">abstract</a> |
+              <a shape="rect" href="javascript:toggleblock('iros18-bibtex', 'iros18-desc')" class="togglebib">bibtex</a> |
               <a href="https://github.com/Pearl-UTexas/gaze_tracker">code</a> |
               <a href="https://drive.google.com/file/d/1U6cEqJhFFj5Yq31o8LfOeibX-N8TRQug/view">talk video</a> |
               <a href="https://www.youtube.com/watch?v=zTZSpEcpW_A">demo video</a>
@@ -499,7 +493,7 @@
 }
                   </pre>
               </div>
-              <p>An approach to predict human gaze fixations relevant for human-robot interaction tasks in real time from a robot's 2D camera view.</p>
+              <p id="iros18-desc">An approach to predict human gaze fixations relevant for human-robot interaction tasks in real time from a robot's 2D camera view.</p>
             </td>
           </tr> 
 
@@ -518,8 +512,8 @@
         
               <div class="paper" id="iros17">
               <a href="papers/iros2017.pdf">pdf</a> |
-              <a href="javascript:toggleblock('iros17-abstract')">abstract</a> |
-              <a shape="rect" href="javascript:toggleblock('iros17-bibtex')" class="togglebib">bibtex</a> |
+              <a href="javascript:toggleblock('iros17-abstract', 'iros17-desc')">abstract</a> |
+              <a shape="rect" href="javascript:toggleblock('iros17-bibtex', 'iros17-desc')" class="togglebib">bibtex</a> |
               <a href="https://drive.google.com/file/d/1xVbWqnp0fQGa6W7Jc8xPYReAZ2RTQV8P/view?usp=sharing">slides</a> |
               <a href="https://drive.google.com/file/d/1ORHby7ivWtQdoI2lFLyocvLfFu-MMcHa/view?usp=sharing">spotlight</a>
               
@@ -549,7 +543,7 @@
 }
                 </pre>
               </div>
-              <p>An approach to select a viewpoint (from a set of fixed viewpoints) to visually verify fine-grained task outcomes post robot task executions.</p>
+              <p id="iros17-desc">An approach to select a viewpoint (from a set of fixed viewpoints) to visually verify fine-grained task outcomes post robot task executions.</p>
             </td>
           </tr> 
 
@@ -566,8 +560,8 @@
         
               <div class="paper" id="iros15">
               <a href="papers/iros2015.pdf">pdf</a> |
-              <a href="javascript:toggleblock('iros15-abstract')">abstract</a> |
-              <a shape="rect" href="javascript:toggleblock('iros15-bibtex')" class="togglebib">bibtex</a> 
+              <a href="javascript:toggleblock('iros15-abstract', 'iros15-desc')">abstract</a> |
+              <a shape="rect" href="javascript:toggleblock('iros15-bibtex', 'iros15-desc')" class="togglebib">bibtex</a> 
               
               <p align="justify"> <i id="iros15-abstract" class="hidden">We propose a novel method for performing fine-grained recognition of human hand grasp types using a single
                 monocular image to allow computational systems to better
@@ -603,7 +597,7 @@
 }
                 </pre>
               </div>
-              <p>A data-driven approach for fine-grained grasp classification.</p>
+              <p id="iros15-desc">A data-driven approach for fine-grained grasp classification.</p>
             </td>
           </tr>   
 
