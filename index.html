@@ -139,7 +139,7 @@
             <heading>&nbsp;&nbsp;News</heading>
             <ul>
             <!--<li> Feb 2022: New preprint available on <a href="https://arxiv.org/abs/2202.03481">A Ranking Game for Imitation Learning</a>.</li> -->
-            <li> Our work on Interaction-Grounded Learning for Recommender Systems was accepted at the <a href="https://orsum.inesctec.pt/orsum2022/">Workshop on Online Recommender Systems and User Modeling</a>, <a href="https://recsys.acm.org">RecSys 2022</a>.</li>
+            <li> Our work on <a href="papers/3_state_igl.pdf">Interaction-Grounded Learning for Recommender Systems</a> was accepted at the <a href="https://orsum.inesctec.pt/orsum2022/">Workshop on Online Recommender Systems and User Modeling</a>, <a href="https://recsys.acm.org">RecSys 2022</a>.</li>
             <li> Co-organizing an interdisciplinary workshop at <a href="https://nips.cc">NeurIPS 2022</a> on <a href="https://attention-learning-workshop.github.io">All Things Attention: Bridging Different Perspectives on Attention</a>.</li>
             <li> Our work on <a href="papers/iros2022.pdf">understanding acoustic patterns of human demonstrators</a> was accepted at <a href="https://iros2022.org">IROS 2022</a>. </li>
             <li> Our recent work on <a href="papers/AI-IGL.pdf">Interaction-Grounded Learning with Action-Inclusive Feedback</a> was accepted at the <a href="https://cfol-workshop.github.io">Workshop on Complex Feedback in Online Learning</a> at <a href="https://icml.cc">ICML 2022</a>.</li>
@@ -209,6 +209,44 @@
           
           <tr>
             <td style="padding:20px;width:30%;vertical-align:top">
+              <a href="images/igl_3states.png"> <img src="images/igl_3states.png"></a></td>
+              <td style="padding:20px;width:70%;vertical-align:top">
+              <p><a href="papers/3_state_igl.pdf" id="orsum22">
+              <papertitle>Interaction-Grounded Learning for Recommender Systems</papertitle></a><br>
+              Jessica Maghakian, Kishan Panaganti, Paul Mineiro, <b>Akanksha Saran</b>, Cheng Tan
+              <br>Short version: Workshop on Online Recommender Systems and User Modeling, RecSys 2022
+              </p>
+        
+              <div class="paper" id="orsum22">
+              <a href="papers/3_state_igl.pdf">pdf</a> |
+              <a href="javascript:toggleblock('orsum22-abstract', 'orsum22-desc')">abstract</a> |
+              <a shape="rect" href="javascript:toggleblock('orsum22-bibtex', 'orsum22-desc')" class="togglebib">bibtex</a> 
+              
+              <p align="justify"> <i id="orsum22-abstract" class="hidden">Recommender systems have long grappled with optimizing user satisfaction using only implicit user feedback. 
+                Many approaches in the literature rely on complicated feedback modeling and costly user
+                studies. We propose online recommender systems as a candidate for the recently introduced Interaction Grounded Learning (IGL) paradigm. 
+                In IGL, a learner attempts to optimize a latent reward in an environment by observing feedback with no grounding. 
+                We introduce a novel personalized variant of IGL for recommender systems that can leverage explicit and implicit user feedback to maximize user satisfaction, 
+                with no feedback signal modeling and minimal assumptions. 
+                With our empirical evaluations that include simulations as well as experiments on real product data, we demonstrate the effectiveness of IGL for recommender systems.</i></p>
+        
+                <pre xml:space="preserve" id="orsum22-bibtex" class="hidden">
+@inproceedings{maghakian2022interaction,
+  title={Interaction-Grounded Learning for Recommender Systems},
+  author={Maghakian, Jessica and Panaganti, Kishan and Mineiro, Paul<br>&emsp;&emsp;and Saran, Akanksha and Tan, Cheng},
+  booktitle={RecSys Workshop on Online Recommender Systems and User Modeling},
+  year={2022},
+  organization={ACM}
+}
+                </pre>
+              </div>
+              <!-- <p>Human teachers demonstrating goal-oriented manipulation tasks to robots fixate more of their eye gaze movements on objects important for the manipulation in comparison to other objects in the scene. Incorporating this finding during subtask classification and bayesian inverse reinforcement learning improves performance of these learning algorithms.</p> -->
+              <p id="orsum22-desc">A novel personalized variant of IGL for recommender systems that can leverage explicit and implicit user feedback to maximize user satisfaction, with no feedback signal modeling and minimal assumptions.</p>
+            </td>
+          </tr> 
+
+          <tr>
+            <td style="padding:20px;width:30%;vertical-align:top">
               <a href="images/audio.png"> <img src="images/audio.png"></a></td>
               <td style="padding:20px;width:70%;vertical-align:top">
               <p><a href="papers/iros2022.pdf" id="IROS22">
@@ -262,7 +300,7 @@
               <a href="javascript:toggleblock('ai-igl-arxiv22-abstract', 'ai-igl-arxiv22-desc')">abstract</a> |
               <a shape="rect" href="javascript:toggleblock('ai-igl-arxiv22-bibtex', 'ai-igl-arxiv22-desc')" class="togglebib">bibtex</a> |
               <a href="posters/ai_igl_poster.png">poster</a> |
-              <a href="https://drive.google.com/file/d/1GJ4pT7GuFHnoe6TblRBVVWBvL7995bLH/view?usp=sharing">talk video</a> 
+              <a href="https://slideslive.com/38985912">talk video</a> 
               
               <p align="justify"> <i id="ai-igl-arxiv22-abstract" class="hidden">Consider the problem setting of Interaction-Grounded Learning 
                 (IGL), in which a learner's goal is to optimally interact with the environment with no explicit reward to ground its policies. 
@@ -301,7 +339,8 @@
               <div class="paper" id="rank-game-arxiv22">
               <a href="https://arxiv.org/pdf/2202.03481.pdf">pdf</a> |
               <a href="javascript:toggleblock('rank-game-arxiv22-abstract', 'rank-game-arxiv22-desc')">abstract</a> |
-              <a shape="rect" href="javascript:toggleblock('rank-game-arxiv22-bibtex', 'rank-game-arxiv22-desc')" class="togglebib">bibtex</a> 
+              <a shape="rect" href="javascript:toggleblock('rank-game-arxiv22-bibtex', 'rank-game-arxiv22-desc')" class="togglebib">bibtex</a> |
+              <a href="https://hari-sikchi.github.io/rank-game/">project webpage</a>
               
               <p align="justify"> <i id="rank-game-arxiv22-abstract" class="hidden">We propose a new framework for imitation learning — treating imitation as a two-player rankingbased Stackelberg game between a policy and a
                 reward function. In this game, the reward agent
