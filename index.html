@@ -139,6 +139,7 @@
             <heading>&nbsp;&nbsp;News</heading>
             <ul>
             <!--<li> Feb 2022: New preprint available on <a href="https://arxiv.org/abs/2202.03481">A Ranking Game for Imitation Learning</a>.</li> -->
+            <li> Our recent work on <a href="papers/AI-IGL.pdf">Interaction-Grounded Learning with Action-Inclusive Feedback</a> was accepted at <a href="https://nips.cc">NeurIPS 2022!</li>
             <li> Our work on <a href="papers/3_state_igl.pdf">Interaction-Grounded Learning for Recommender Systems</a> was accepted at the <a href="https://orsum.inesctec.pt/orsum2022/">Workshop on Online Recommender Systems and User Modeling</a>, <a href="https://recsys.acm.org">RecSys 2022</a>.</li>
             <li> Co-organizing an interdisciplinary workshop at <a href="https://nips.cc">NeurIPS 2022</a> on <a href="https://attention-learning-workshop.github.io">All Things Attention: Bridging Different Perspectives on Attention</a>.</li>
             <li> Our work on <a href="papers/iros2022.pdf">understanding acoustic patterns of human demonstrators</a> was accepted at <a href="https://iros2022.org">IROS 2022</a>. </li>
@@ -207,6 +208,49 @@
         </style>
         <table class="research-table container-wide"  style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           
+
+          <tr>
+            <!--Update the width:30% and width:70% for text and images to the required proportions-->
+            <td style="padding:20px;width:10%;vertical-align:top">
+              <a href="images/ai-igl.png">  <img src="images/ai-igl.png"></a></td>
+              <td style="padding:20px;width:70%;vertical-align:top">
+              <p><a href="https://arxiv.org/abs/2206.08364" id="ai-igl-arxiv22">
+              <papertitle>Interaction-Grounded Learning with Action-Inclusive Feedback</papertitle></a><br>
+              Tengyang Xie<sup>*</sup>, <b>Akanksha Saran</b><sup>*</sup>, Dylan Foster, Lekan Molu, Ida Momennejad, Nan Jiang, Paul Mineiro, John Langford
+              <br>Short version: Workshop on Complex Feedback for Online Learning, ICML 2022
+              <br>Full version: NeurIPS 2022
+              </p>
+        
+              <div class="paper" id="ai-igl-arxiv22">
+              <a href="https://arxiv.org/pdf/2206.08364.pdf">pdf</a> |
+              <a href="javascript:toggleblock('ai-igl-arxiv22-abstract', 'ai-igl-arxiv22-desc')">abstract</a> |
+              <a shape="rect" href="javascript:toggleblock('ai-igl-arxiv22-bibtex', 'ai-igl-arxiv22-desc')" class="togglebib">bibtex</a> |
+              <a href="posters/ai_igl_poster.png">poster</a> |
+              <a href="https://slideslive.com/38985912">video</a> 
+              
+              <p align="justify"> <i id="ai-igl-arxiv22-abstract" class="hidden">Consider the problem setting of Interaction-Grounded Learning 
+                (IGL), in which a learner's goal is to optimally interact with the environment with no explicit reward to ground its policies. 
+                The agent observes a context vector, takes an action, and receives a feedback vector, using this information to effectively 
+                optimize a policy with respect to a latent reward function. Prior analyzed approaches fail when the feedback vector contains 
+                the action, which significantly limits IGL&#39;s success in many potential scenarios such as Brain-computer interface (BCI) 
+                or Human-computer interface (HCI) applications. We address this by creating an algorithm and analysis which allows IGL to 
+                work even when the feedback vector contains the action, encoded in any fashion. We provide theoretical guarantees and 
+                large-scale experiments based on supervised datasets to demonstrate the effectiveness of the new approach. </i></p>
+        
+                <pre xml:space="preserve" id="ai-igl-arxiv22-bibtex" class="hidden">
+                  @article{xie2022interaction,
+                    title={Interaction Grounded Learning with Action-Inclusive Feedback},
+                    author={Xie, Tengyang and Saran, Akanksha and Foster, Dylan and <br>&emsp;&emsp;Molu, Lekan and Momennejad, Ida and Jiang, Nan <br>&emsp;&emsp;and Mineiro, Paul and Langford, John},
+                    booktitle={Proceedings of the ICML Workshop on <br>&emsp;&emsp;Complex Feedback for Online Learning},
+                    year={2022}
+                  }
+                </pre>
+              </div>
+              <p id="ai-igl-arxiv22-desc">An algorithm (AI-IGL) that learns to interpret signals from a controller in an interactive loop without any formal calibration of signal to control
+              --- leveraging implicit feedback which can include the action information, but no explicit rewards are available.</p>
+            </td>
+          </tr> 
+
           <tr>
             <td style="padding:20px;width:30%;vertical-align:top">
               <a href="images/igl_3states.png"> <img src="images/igl_3states.png"></a></td>
@@ -283,47 +327,6 @@
           </tr> 
           
           
-          
-          <tr>
-            <!--Update the width:30% and width:70% for text and images to the required proportions-->
-            <td style="padding:20px;width:10%;vertical-align:top">
-              <a href="images/ai-igl.png">  <img src="images/ai-igl.png"></a></td>
-              <td style="padding:20px;width:70%;vertical-align:top">
-              <p><a href="https://arxiv.org/abs/2206.08364" id="ai-igl-arxiv22">
-              <papertitle>Interaction-Grounded Learning with Action-Inclusive Feedback</papertitle></a><br>
-              Tengyang Xie<sup>*</sup>, <b>Akanksha Saran</b><sup>*</sup>, Dylan Foster, Lekan Molu, Ida Momennejad, Nan Jiang, Paul Mineiro, John Langford
-              <br>Short version: Workshop on Complex Feedback for Online Learning, ICML 2022
-              </p>
-        
-              <div class="paper" id="ai-igl-arxiv22">
-              <a href="https://arxiv.org/pdf/2206.08364.pdf">pdf</a> |
-              <a href="javascript:toggleblock('ai-igl-arxiv22-abstract', 'ai-igl-arxiv22-desc')">abstract</a> |
-              <a shape="rect" href="javascript:toggleblock('ai-igl-arxiv22-bibtex', 'ai-igl-arxiv22-desc')" class="togglebib">bibtex</a> |
-              <a href="posters/ai_igl_poster.png">poster</a> |
-              <a href="https://slideslive.com/38985912">talk video</a> 
-              
-              <p align="justify"> <i id="ai-igl-arxiv22-abstract" class="hidden">Consider the problem setting of Interaction-Grounded Learning 
-                (IGL), in which a learner's goal is to optimally interact with the environment with no explicit reward to ground its policies. 
-                The agent observes a context vector, takes an action, and receives a feedback vector, using this information to effectively 
-                optimize a policy with respect to a latent reward function. Prior analyzed approaches fail when the feedback vector contains 
-                the action, which significantly limits IGL&#39;s success in many potential scenarios such as Brain-computer interface (BCI) 
-                or Human-computer interface (HCI) applications. We address this by creating an algorithm and analysis which allows IGL to 
-                work even when the feedback vector contains the action, encoded in any fashion. We provide theoretical guarantees and 
-                large-scale experiments based on supervised datasets to demonstrate the effectiveness of the new approach. </i></p>
-        
-                <pre xml:space="preserve" id="ai-igl-arxiv22-bibtex" class="hidden">
-                  @article{xie2022interaction,
-                    title={Interaction Grounded Learning with Action-Inclusive Feedback},
-                    author={Xie, Tengyang and Saran, Akanksha and Foster, Dylan and <br>&emsp;&emsp;Molu, Lekan and Momennejad, Ida and Jiang, Nan <br>&emsp;&emsp;and Mineiro, Paul and Langford, John},
-                    booktitle={Proceedings of the ICML Workshop on <br>&emsp;&emsp;Complex Feedback for Online Learning},
-                    year={2022}
-                  }
-                </pre>
-              </div>
-              <p id="ai-igl-arxiv22-desc">An algorithm (AI-IGL) that learns to interpret signals from a controller in an interactive loop without any formal calibration of signal to control
-              --- leveraging implicit feedback which can include the action information, but no explicit rewards are available.</p>
-            </td>
-          </tr> 
 
           <tr>
             <!--Update the width:30% and width:70% for text and images to the required proportions-->
