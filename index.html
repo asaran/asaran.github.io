@@ -138,7 +138,7 @@
           <tr><td>
             <heading>&nbsp;&nbsp;News</heading>
             <ul>
-            <!--<li> Feb 2022: New preprint available on <a href="https://arxiv.org/abs/2202.03481">A Ranking Game for Imitation Learning</a>.</li> -->
+            <li> Our paper on <a href="https://arxiv.org/abs/2202.03481">A Ranking Game for Imitation Learning</a> was accepted at the <a href="https://sites.google.com/view/deep-rl-workshop-neurips-2022">Deep Reinforcement Learning Workshop</a> at <a href="https://nips.cc">NeurIPS 2022</a>.</li> -->
             <li> Our work on <a href="https://arxiv.org/pdf/2206.08364.pdf">Interaction-Grounded Learning with Action-Inclusive Feedback</a> was accepted at <a href="https://nips.cc">NeurIPS 2022!</a></li>
             <li> Our work on <a href="papers/3_state_igl.pdf">Interaction-Grounded Learning for Recommender Systems</a> was accepted at the <a href="https://orsum.inesctec.pt/orsum2022/">Workshop on Online Recommender Systems and User Modeling</a>, <a href="https://recsys.acm.org">RecSys 2022</a>.</li>
             <li> Co-organizing an interdisciplinary workshop at <a href="https://nips.cc">NeurIPS 2022</a> on <a href="https://attention-learning-workshop.github.io">All Things Attention: Bridging Different Perspectives on Attention</a>.</li>
@@ -208,6 +208,53 @@
         </style>
         <table class="research-table container-wide"  style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           
+
+          <tr>
+            <!--Update the width:30% and width:70% for text and images to the required proportions-->
+            <td style="padding:20px;width:30%;vertical-align:top">
+              <a href="images/rank-game-pref-labels.png">  <img src="images/rank-game-pref-labels.png"></a></td>
+              <td style="padding:20px;width:70%;vertical-align:top">
+              <p><a href="https://arxiv.org/abs/2202.03481" id="rank-game-arxiv22">
+              <papertitle>A Ranking Game for Imitation Learning</papertitle></a><br>
+              Harshit Sikchi, <b>Akanksha Saran</b>, Wonjoon Goo, Scott Niekum
+              <br>Short Version: Deep Reinforcement Learning Workshop, NeurIPS 2022
+              </p>
+        
+              <div class="paper" id="rank-game-arxiv22">
+              <a href="https://arxiv.org/pdf/2202.03481.pdf">pdf</a> |
+              <a href="javascript:toggleblock('rank-game-arxiv22-abstract', 'rank-game-arxiv22-desc')">abstract</a> |
+              <a shape="rect" href="javascript:toggleblock('rank-game-arxiv22-bibtex', 'rank-game-arxiv22-desc')" class="togglebib">bibtex</a> |
+              <a href="https://hari-sikchi.github.io/rank-game/">project webpage</a>
+              
+              <p align="justify"> <i id="rank-game-arxiv22-abstract" class="hidden">We propose a new framework for imitation learning — treating imitation as a two-player rankingbased Stackelberg game between a policy and a
+                reward function. In this game, the reward agent
+                learns to satisfy pairwise performance rankings
+                within a set of policies, while the policy agent
+                learns to maximize this reward. This game encompasses a large subset of both inverse reinforcement learning (IRL) methods and methods
+                which learn from offline preferences. The Stackelberg game formulation allows us to use optimization methods that take the game structure into
+                account, leading to more sample efficient and stable learning dynamics compared to existing IRL
+                methods. We theoretically analyze the requirements of the loss function used for ranking policy
+                performances to facilitate near-optimal imitation
+                learning at equilibrium. We use insights from this
+                analysis to further increase sample efficiency of
+                the ranking game by using automatically generated rankings or with offline annotated rankings.
+                Our experiments show that the proposed method
+                achieves state-of-the-art sample efficiency and is
+                able to solve previously unsolvable tasks in the
+                Learning from Observation (LfO) setting. </i></p>
+        
+                <pre xml:space="preserve" id="rank-game-arxiv22-bibtex" class="hidden">
+@article{sikchi2022ranking,
+  title={A Ranking Game for Imitation Learning},
+  author={Sikchi, Harshit and Saran, Akanksha and Goo,<br>&emsp;&emsp;Wonjoon and Niekum, Scott},
+  journal={arXiv preprint arXiv:2202.03481},
+  year={2022}
+}
+                </pre>
+              </div>
+              <p id="rank-game-arxiv22-desc">Treating imitation learning as a two-player ranking game between a policy and a reward function can solve previously unsolvable tasks in the Learning from Observation (LfO) setting.</p>
+            </td>
+          </tr>   
 
           <tr>
             <!--Update the width:30% and width:70% for text and images to the required proportions-->
@@ -327,56 +374,6 @@
             </td>
           </tr> 
           
-          
-
-          <tr>
-            <!--Update the width:30% and width:70% for text and images to the required proportions-->
-            <td style="padding:20px;width:30%;vertical-align:top">
-              <a href="images/rank-game-pref-labels.png">  <img src="images/rank-game-pref-labels.png"></a></td>
-              <td style="padding:20px;width:70%;vertical-align:top">
-              <p><a href="https://arxiv.org/abs/2202.03481" id="rank-game-arxiv22">
-              <papertitle>A Ranking Game for Imitation Learning</papertitle></a><br>
-              Harshit Sikchi, <b>Akanksha Saran</b>, Wonjoon Goo, Scott Niekum
-              <br>arXiv 2022
-              </p>
-        
-              <div class="paper" id="rank-game-arxiv22">
-              <a href="https://arxiv.org/pdf/2202.03481.pdf">pdf</a> |
-              <a href="javascript:toggleblock('rank-game-arxiv22-abstract', 'rank-game-arxiv22-desc')">abstract</a> |
-              <a shape="rect" href="javascript:toggleblock('rank-game-arxiv22-bibtex', 'rank-game-arxiv22-desc')" class="togglebib">bibtex</a> |
-              <a href="https://hari-sikchi.github.io/rank-game/">project webpage</a>
-              
-              <p align="justify"> <i id="rank-game-arxiv22-abstract" class="hidden">We propose a new framework for imitation learning — treating imitation as a two-player rankingbased Stackelberg game between a policy and a
-                reward function. In this game, the reward agent
-                learns to satisfy pairwise performance rankings
-                within a set of policies, while the policy agent
-                learns to maximize this reward. This game encompasses a large subset of both inverse reinforcement learning (IRL) methods and methods
-                which learn from offline preferences. The Stackelberg game formulation allows us to use optimization methods that take the game structure into
-                account, leading to more sample efficient and stable learning dynamics compared to existing IRL
-                methods. We theoretically analyze the requirements of the loss function used for ranking policy
-                performances to facilitate near-optimal imitation
-                learning at equilibrium. We use insights from this
-                analysis to further increase sample efficiency of
-                the ranking game by using automatically generated rankings or with offline annotated rankings.
-                Our experiments show that the proposed method
-                achieves state-of-the-art sample efficiency and is
-                able to solve previously unsolvable tasks in the
-                Learning from Observation (LfO) setting. </i></p>
-        
-                <pre xml:space="preserve" id="rank-game-arxiv22-bibtex" class="hidden">
-@article{sikchi2022ranking,
-  title={A Ranking Game for Imitation Learning},
-  author={Sikchi, Harshit and Saran, Akanksha and Goo,<br>&emsp;&emsp;Wonjoon and Niekum, Scott},
-  journal={arXiv preprint arXiv:2202.03481},
-  year={2022}
-}
-                </pre>
-              </div>
-              <p id="rank-game-arxiv22-desc">Treating imitation learning as a two-player ranking game between a policy and a reward function can solve previously unsolvable tasks in the Learning from Observation (LfO) setting.</p>
-            </td>
-          </tr>   
-  
-
 
           <tr>
             <td style="padding:20px;width:30%;vertical-align:middle">
