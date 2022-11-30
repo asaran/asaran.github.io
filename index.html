@@ -167,7 +167,7 @@
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
-              <!-- <p>	&#945;-&#946; indicates alphabetical author order, * indicates equal contribution</p> -->
+              <p>	&#945;-&#946; indicates alphabetical author order, * indicates equal contribution</p>
             </td>
           </tr>
         </tbody></table>
@@ -208,9 +208,51 @@
         </style>
         <table class="research-table container-wide"  style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           
-
           <tr>
             <!--Update the width:30% and width:70% for text and images to the required proportions-->
+            <td style="padding:20px;width:30%;vertical-align:top">
+              <!-- <a href="images/igl_3states.png"> <img src="images/igl_3states.png"></a></td> -->
+              <a href="images/IGL-P(3).png"> <img src="images/IGL-P(3).png"></a></td>
+              <td style="padding:20px;width:70%;vertical-align:top">
+              <!-- <p><a href="https://orsum.inesctec.pt/orsum2022/assets/files/paper5.pdf" id="orsum22"> -->
+              <p><a href="http://arxiv.org/abs/2211.15823" id="orsum22">
+              <papertitle>Personalized Reward Learning with Interaction-Grounded Learning</papertitle></a><br>
+              <!--(&#945;-&#946;) Jessica Maghakian, Paul Mineiro, Kishan Panaganti, <b>Akanksha Saran</b>, Cheng Tan-->
+              (&#945;-&#946;) Jessica Maghakian, Paul Mineiro, Kishan Panaganti, Mark Rucker, <b>Akanksha Saran</b>, Cheng Tan
+              <br>Short version: Workshop on Online Recommender Systems and User Modeling, RecSys 2022
+              </p>
+        
+              <div class="paper" id="orsum22">
+              <!-- <a href="https://orsum.inesctec.pt/orsum2022/assets/files/paper5.pdf">pdf</a> | -->
+              <a href="https://arxiv.org/pdf/2211.15823.pdf">pdf</a> |
+              <a href="javascript:toggleblock('orsum22-abstract', 'orsum22-desc')">abstract</a> |
+              <a shape="rect" href="javascript:toggleblock('orsum22-bibtex', 'orsum22-desc')" class="togglebib">bibtex</a> 
+              
+              <p align="justify"> <i id="orsum22-abstract" class="hidden">In an era of countless content offerings, recommender systems alleviate information 
+                overload by providing users with personalized content suggestions. Due to the scarcity of explicit user feedback, modern recommender systems 
+                typically optimize for the same fixed combination of implicit feedback signals across all users. However, this approach disregards a growing 
+                body of work highlighting that (i) implicit signals can be used by users in diverse ways, signaling anything from satisfaction to active dislike, 
+                and (ii) different users communicate preferences in different ways. We propose applying the recent Interaction Grounded Learning (IGL) paradigm to 
+                address the challenge of learning representations of diverse user communication modalities. Rather than taking a fixed, human-designed reward function, 
+                IGL is able to learn personalized reward functions for different users and then optimize directly for the latent user satisfaction. We demonstrate 
+                the success of IGL with experiments using simulations as well as with real-world production traces.</i></p>
+        
+                <pre xml:space="preserve" id="orsum22-bibtex" class="hidden">
+@inproceedings{maghakian2022interaction,
+  title={Interaction-Grounded Learning for Recommender Systems},
+  author={Maghakian, Jessica and Mineiro, Paul and Panaganti, Kishan<br>&emsp;&emsp;and Rucker, Mark and Saran, Akanksha and Tan, Cheng},
+  journal={arXiv preprint arXiv:2211.15823},
+  year={2022}
+}
+                </pre>
+              </div>
+               <!-- <p id="orsum22-desc">A novel personalized variant of IGL for recommender systems that can leverage explicit and implicit user feedback to maximize user satisfaction, with no feedback signal modeling and minimal assumptions.</p>-->
+              <p id="orsum22-desc">A novel personalized variant of IGL: the first IGL strategy for context-dependent feedback, the first use of inverse kinematics as an IGL objective, and the first IGL strategy for more than two latent states.</p>
+            </td>
+          </tr> 
+
+
+          <tr>
             <td style="padding:20px;width:30%;vertical-align:top">
               <a href="images/rank-game-pref-labels.png">  <img src="images/rank-game-pref-labels.png"></a></td>
               <td style="padding:20px;width:70%;vertical-align:top">
@@ -299,46 +341,7 @@
             </td>
           </tr> 
 
-          <tr>
-            <td style="padding:20px;width:30%;vertical-align:top">
-              <a href="images/igl_3states.png"> <img src="images/igl_3states.png"></a></td>
-              <td style="padding:20px;width:70%;vertical-align:top">
-              <p><a href="https://orsum.inesctec.pt/orsum2022/assets/files/paper5.pdf" id="orsum22">
-              <!-- <p><a href="https://openreview.net/pdf?id=wGvzQWFyUB" id="orsum22"> -->
-              <papertitle>Interaction-Grounded Learning for Recommender Systems</papertitle></a><br>
-              <!--(&#945;-&#946;) Jessica Maghakian, Paul Mineiro, Kishan Panaganti, <b>Akanksha Saran</b>, Cheng Tan-->
-              Jessica Maghakian, Kishan Panaganti, Paul Mineiro, <b>Akanksha Saran</b>, Cheng Tan
-              <br>Workshop on Online Recommender Systems and User Modeling, RecSys 2022
-              </p>
-        
-              <div class="paper" id="orsum22">
-              <a href="https://orsum.inesctec.pt/orsum2022/assets/files/paper5.pdf">pdf</a> |
-              <a href="javascript:toggleblock('orsum22-abstract', 'orsum22-desc')">abstract</a> |
-              <a shape="rect" href="javascript:toggleblock('orsum22-bibtex', 'orsum22-desc')" class="togglebib">bibtex</a> 
-              
-              <p align="justify"> <i id="orsum22-abstract" class="hidden">Recommender systems have long grappled with optimizing user satisfaction using only implicit user feedback. 
-                Many approaches in the literature rely on complicated feedback modeling and costly user
-                studies. We propose online recommender systems as a candidate for the recently introduced Interaction Grounded Learning (IGL) paradigm. 
-                In IGL, a learner attempts to optimize a latent reward in an environment by observing feedback with no grounding. 
-                We introduce a novel personalized variant of IGL for recommender systems that can leverage explicit and implicit user feedback to maximize user satisfaction, 
-                with no feedback signal modeling and minimal assumptions. 
-                With our empirical evaluations that include simulations as well as experiments on real product data, we demonstrate the effectiveness of IGL for recommender systems.</i></p>
-        
-                <pre xml:space="preserve" id="orsum22-bibtex" class="hidden">
-@inproceedings{maghakian2022interaction,
-  title={Interaction-Grounded Learning for Recommender Systems},
-  author={Maghakian, Jessica and Panaganti, Kishan and Mineiro, Paul<br>&emsp;&emsp;and Saran, Akanksha and Tan, Cheng},
-  booktitle={RecSys Workshop on Online Recommender Systems and User Modeling},
-  year={2022},
-  organization={ACM}
-}
-                </pre>
-              </div>
-               <!-- <p id="orsum22-desc">A novel personalized variant of IGL for recommender systems that can leverage explicit and implicit user feedback to maximize user satisfaction, with no feedback signal modeling and minimal assumptions.</p>-->
-              <p id="orsum22-desc">A novel personalized variant of IGL for recommender systems: the first IGL strategy for context-dependent feedback, the first use of inverse kinematics as an IGL objective, and the first IGL strategy for more than two latent states.</p>
-            </td>
-          </tr> 
-
+          
           <tr>
             <td style="padding:20px;width:30%;vertical-align:top">
               <a href="images/audio.png"> <img src="images/audio.png"></a></td>
