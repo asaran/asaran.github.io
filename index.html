@@ -285,7 +285,7 @@
        }
         </style>
         <table class="research-table container-wide"  style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-<!--         
+       
           
 
           <tr>
@@ -293,26 +293,26 @@
             <td style="padding:20px;width:30%;vertical-align:middle">
               <a href="images/vid_rep.png"> <img src="images/vid_rep.png"></a></td>
               <td style="padding:20px;width:70%;vertical-align:top">
-              <p><a href="https://arxiv.org/abs/" id="vidrep">
+              <p><a href="https://openreview.net/forum?id=3mnWvUZIXt&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICLR.cc%2F2024%2FConference%2FAuthors%23your-submissions)" id="vidrep">
               <papertitle>Towards Principled Representation Learning from Videos for Reinforcement Learning</papertitle></a><br>
               Dipendra Misra<sup>*</sup>, <b>Akanksha Saran</b><sup>*</sup>, Tengyang Xie, Alex Lamb, John Langford
-              <br>arXiv 2023 
+              <br>ICLR 2024 [Spotlight] 
               </p>
         
               <div class="paper" id="vidrep">
-              <a href="https://arxiv.org/pdf/.pdf">pdf</a> |
+              <a href="https://openreview.net/pdf?id=3mnWvUZIXt">pdf</a> |
               <a href="javascript:toggleblock('vidrep-abstract', 'vidrep-desc')">abstract</a> |
-              <a shape="rect" href="javascript:toggleblock('vidrep-bibtex', 'vidrep-desc')" class="togglebib">bibtex</a> |
-              <a href="https://github.com/microsoft/Intrepid">code</a>  
+              <a shape="rect" href="javascript:toggleblock('vidrep-bibtex', 'vidrep-desc')" class="togglebib">bibtex</a> 
+              <!-- <a href="https://github.com/microsoft/Intrepid">code</a>   -->
               
-              <p align="justify"> <i id="vidrep-abstract" class="hidden"> ...</i></p>
+              <p align="justify"> <i id="vidrep-abstract" class="hidden">We study pre-training representations for decision-making using video data, which is abundantly available for tasks such as game agents and software test- ing. Even though significant empirical advances have been made on this problem, a theoretical understanding remains absent. We initiate the theoretical investiga- tion into principled approaches for representation learning and focus on learning the latent state representations of the underlying MDP using video data. We study two types of settings: one where there is iid noise in the observation, and a more challenging setting where there is also the presence of exogenous noise, which is non-iid noise that is temporally correlated, such as the motion of people or cars in the background. We study three commonly used approaches: autoencoding, temporal contrastive learning, and forward modeling. We prove upper bounds for temporal contrastive and forward modeling in the presence of only iid noise. We show that these approaches can learn the latent state and use it to do efficient downstream RL with polynomial sample complexity. When exogenous noise is also present, we establish a lower bound result showing that learning from video data can be exponentially worse than learning from action-labeled trajectory data. This partially explains why reinforcement learning with video pre-training is hard. We evaluate these representational learning methods in two visual domains, yield- ing results that are consistent with our theoretical findings.</i></p>
         
                 <pre xml:space="preserve" id="vidrep-bibtex" class="hidden">
-  @article{misra2023towards,
+  @inproceedings{misra2024towards,
     title={Towards Principled Representation Learning from Videos for Reinforcement Learning},
     author={Misra, Dipendra and Saran, Akanksha and Xie, Tengyang and <br>&emsp;&emsp;&emsp;&emsp;Lamb, Alex and Langford, John.},
-    journal={},
-    year={2023}
+    booktitle={International Conference on Learning Representations (ICLR)},
+    year={2024}
   }
                 </pre>
               </div>
@@ -320,7 +320,7 @@
             </td>
           </tr>  
         
-        
+        <!--  
         <tr>
             <td style="padding:20px;width:30%;vertical-align:middle">
               <a href="images/EyeO.png"> <img src="images/EyeO.png"></a></td>
