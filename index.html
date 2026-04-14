@@ -39,6 +39,11 @@
     .hidden {
       display: none;
     }
+
+    .paper pre {
+      overflow-x: auto;
+      max-width: 100%;
+    }
   </style>
 
     <script type="text/javascript">
@@ -104,7 +109,7 @@
         <table class="container" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr class="about-section" style="padding:0px">
             <td style="padding:2.5%;width:63%;vertical-align:middle">
-              <p style="text-align:center">
+              <p style="text-align:center;padding-left:17em;margin-bottom:1.5em">
                 <name>Akanksha Saran</name><br>
 		                  akanksha dot saran at sony dot com
               </p>
@@ -143,7 +148,7 @@
                 <a href="https://bsky.app/profile/akanksha-saran.bsky.social">Bluesky</a>
               </p>
             </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
+            <td style="padding:2.5%;padding-top:7.5em;width:40%;max-width:40%;vertical-align:top">
               <a class="profile-photo-link" href="images/me_yay.jpg"><img alt="profile photo" src="images/me_yay.jpg" class="hoverZoomLink"></a>
             </td>
           </tr>
@@ -170,7 +175,7 @@
        
         <table class="container" width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
           <tr><td>
-            <heading>&nbsp;&nbsp;News</heading>
+            <heading>&nbsp;&nbsp;Recent News</heading>
             <div class="news-content">
               <ul class="news-ul"> 
                 <!-- <li> Serving as an Area Chair for <a href="https://neurips.cc/">NeurIPS 2026</a>.</li> -->
@@ -184,6 +189,7 @@
                 <li> Granted a US patent on <a href="https://patents.google.com/patent/US20250036196A1/en">autocalibration of gaze indicators</a> for improving gaze-based interaction systems.</li>
               </div>
                 </ul>
+                <!--
                 <ul id="js-news-show-more-content" class="news-ul hidden">
                 <li> Our paper <a href="papers/icmi2024.pdf">Prosody as a Teaching Signal for Agent Learning: Exploratory Studies and Algorithmic Implications</a> was accepted to the <a href="https://icmi.acm.org/2024/">ACM International Conference on Multimodal Interaction (ICMI 2024)</a> as an oral presentation.</li>
                 <li> Our workshop proposal on <a href="https://rlbrew-workshop.github.io/index.html">Reinforcement Learning Beyond Rewards</a> was accepted to the <a href="https://rl-conference.cc/">1st Reinforcement Learning Conference (RLC 2024)</a>.</li>
@@ -201,6 +207,7 @@
                 <li> New <a href="https://www.microsoft.com/en-us/research/blog/unifying-learning-from-preferences-and-demonstration-via-a-ranking-game-for-imitation-learning/?OCID=msr_blog_ImitationLearning_LI">blog post</a> featuring our recent TMLR paper <a href="https://arxiv.org/abs/2202.03481">A Ranking Game for Imitation Learning</a>.</li>
                 <li> Invited talk at <a href="https://www.ai.sony">Sony Research</a>.</li> 
                 <li> Invited talk at <a href="https://cpsc.yale.edu/research/primary-areas/robotics">Yale University</a>.</li>
+                -->
                 
                 <!-- <li> Invited talk at <a href="https://www.ai.sony">Sony AI Research</a>.</li> 
                 <li> Invited talk at <a href="https://cpsc.yale.edu/research/primary-areas/robotics">Yale University</a>.</li>
@@ -235,11 +242,13 @@
                 <!--<li> Invited talk at the <a href="https://sites.google.com/view/realworldhri-workshop/hri21/speakers-schedules?authuser=0">Workshop on Solutions for Socially Intelligent HRI in Real-World Scenarios</a> at <a href="https://humanrobotinteraction.org/2021/">HRI 2021</a>.</li>-->
                 <!--<li> I served as a Program Chair for the <a href="http://www.hripioneers.info/hri21/program_speakers.html">HRI Pioneers workshop</a> at <a href="https://humanrobotinteraction.org/2021/">HRI 2021</a>.</li>-->
                 
+                <!--
                 </ul>
 
                 <button id="js-show-more-news-content-btn" class="show-more-news-content-btn" type="button">
                   ⇩ Show More
                 </button>
+              -->
             </div>
           </td></tr>
         </table>
@@ -277,6 +286,7 @@
 
 .research-table {
   overflow: hidden;
+  table-layout: fixed;
 }
         /* image style format*/  
         .research-table img {
@@ -311,7 +321,7 @@
        
 
           <tr>
-            <td style="padding:20px;width:30%;vertical-align:middle">
+            <td style="padding:20px;width:30%;vertical-align:top">
               <a href="images/redteamVLA.png"> <img src="images/redteamVLA.png"></a></td>
               <td style="padding:20px;width:70%;vertical-align:top">
               <p><a href="https://arxiv.org/abs/2603.12510" id="arxiv2026">
@@ -345,14 +355,17 @@
                 improving the robustness of VLA-based robots. 
                 </i></p>
         
-                <pre xml:space="preserve" id="arxiv2026-bibtex" class="hidden">
-  @article{srikanth2026red,
-    title={Red-Teaming Vision-Language-Action Models via Quality Diversity Prompt Generation for Robust Robot Policies},
-    author={},
-    journal={arXiv},
-    year={2026}
-  }
-                </pre>
+<pre xml:space="preserve" id="arxiv2026-bibtex" class="hidden">
+@article{srikanth2026red,
+  title={Red-Teaming Vision-Language-Action Models via Quality Diversity
+  Prompt Generation for Robust Robot Policies},
+  author={Srikanth, Siddharth and Liang, Freddie and Hsu, Sophie and Bhatt, Varun
+  and Zhao, Shihan and Chen, Henry and Tjanaka, Bryon and Hwang, Minjune
+  and Saran, Akanksha and Seita, Daniel and Tabrez, Aaquib and Nikolaidis, Stefanos},
+  journal={arXiv},
+  year={2026}
+}
+</pre>
               </div>
               <p id="arxiv2026-desc">A method that leverages Quality Diversity and VLMs to automatically generate diverse, 
                 adversarial natural language instructions, which are then used to expose vulnerabilities and improve the 
@@ -362,7 +375,7 @@
 
 
           <tr>
-            <td style="padding:20px;width:30%;vertical-align:middle">
+            <td style="padding:20px;width:30%;vertical-align:top">
               <a href="images/hirl.png"> <img src="images/hirl.png"></a></td>
               <td style="padding:20px;width:70%;vertical-align:top">
               <p><a href="https://dl.acm.org/doi/10.1145/3779297" id="thri2025">
@@ -404,16 +417,17 @@
                 the growing HIRL community.
                 </i></p>
         
-                <pre xml:space="preserve" id="thri2025-bibtex" class="hidden">
-  @article{baraka2025human,
-    title={Human-Interactive Robot Learning: Definition, Challenges, and Recommendations},
-    author={Baraka, Kim and FAULKNER, TAYLOR KESSLER and BIYIK, ERDEM and SERENA, BOOTH and <br>&emsp;&emsp;&emsp;&emsp;
-      CHETOUANI, MOHAMED and GROLLMAN, DANIEL H and SARAN, AKANKSHA and SENFT, EMMANUEL and <br>&emsp;&emsp;&emsp;&emsp;
-      TULLI, SILVIA and VOLLMER, ANNA-LISA and others},
-    journal={ACM Transaction on Human-Robot Interaction (THRI)},
-    year={2025}
-  }
-                </pre>
+<pre xml:space="preserve" id="thri2025-bibtex" class="hidden">
+@article{baraka2025human,
+  title={Human-Interactive Robot Learning: Definition, Challenges,
+  and Recommendations},
+  author={Baraka, Kim and Faulkner, Taylor Kessler and Biyik, Erdem and Booth, Serena
+  and Chetouani, Mohamed and Grollman, Daniel H and Saran, Akanksha and Senft, Emmanuel
+  and Tulli, Silvia and Vollmer, Anna-Lisa and others},
+  journal={ACM Transaction on Human-Robot Interaction (THRI)},
+  year={2025}
+}
+</pre>
               </div>
               <p id="thri2025-desc">A roadmap for the Human-Interactive Robot Learning (HIRL) community to prioritize richer human-robot dialogue, safety-aware exploration, and shared interdisciplinary benchmarks to drive the next wave of sample-efficient, human-aligned robot learning.</p>
             </td>
@@ -421,7 +435,7 @@
 
 
         <tr>
-            <td style="padding:20px;width:30%;vertical-align:middle">
+            <td style="padding:20px;width:30%;vertical-align:top">
               <a href="images/EyeO.png"> <img src="images/EyeO.png"></a></td>
               <td style="padding:20px;width:70%;vertical-align:top">
               <p><a href="https://dl.acm.org/doi/full/10.1145/3706599.3720090" id="eyeo">
@@ -449,14 +463,15 @@
                 autocalibration can significantly improve typing efficiency and user
                 experience. </i></p>
         
-                <pre xml:space="preserve" id="eyeo-bibtex" class="hidden">
-  @article{saran2023eyeo,
-    title={EyeO: Autocalibrating Gaze Output with Gaze Input},
-    author={Saran, Akanksha and Alber, Jacob and Zhang, Cyril<br>&emsp;&emsp;&emsp;&emsp;and Paradiso, Ann and Bragg, Danielle and Langford, John},
-    journal={arXiv preprint arXiv:2307.15039},
-    year={2023}
-  }
-                </pre>
+<pre xml:space="preserve" id="eyeo-bibtex" class="hidden">
+@article{saran2023eyeo,
+  title={EyeO: Autocalibrating Gaze Output with Gaze Input},
+  author={Saran, Akanksha and Alber, Jacob and Zhang, Cyril
+  and Paradiso, Ann and Bragg, Danielle and Langford, John},
+  journal={arXiv preprint arXiv:2307.15039},
+  year={2023}
+}
+</pre>
               </div>
               <p id="eyeo-desc">Leveraging eye gaze fixations during reading can be useful to implicitly autocalibrate eye trackers for improved gaze typing. </p>
             </td>
@@ -465,7 +480,7 @@
         
          
         <tr>
-            <td style="padding:20px;width:30%;vertical-align:middle">
+            <td style="padding:20px;width:30%;vertical-align:top">
               <a href="images/prosody_woz.jpg"> <img src="images/prosody_woz.jpg"></a></td>
               <td style="padding:20px;width:70%;vertical-align:top">
               <p><a href="papers/icmi2024.pdf" id="icmi2024">
@@ -497,14 +512,16 @@
                 the potential of leveraging prosody as an implicit signal for more 
                 efficient agent learning, thus advancing human-agent interaction paradigms.</i></p>
         
-                <pre xml:space="preserve" id="icmi2024-bibtex" class="hidden">
-  @article{knierim2024prosody,
-    title={Prosody as a Teaching Signal for Agent Learning: <br>&emsp;&emsp;&emsp;&emsp;Exploratory Studies and Algorithmic Implications},
-    author={Knierim, Matilda and Jain, Sahil and Han Aydoğan, Murat<br>&emsp;&emsp;&emsp;&emsp;and Mitra, Kenneth and Kush Desai and Saran, Akanksha and Baraka, Kim},
-    journal={ACM International Conference on Multimodal Interaction (ICMI)},
-    year={2024}
-  }
-                </pre>
+<pre xml:space="preserve" id="icmi2024-bibtex" class="hidden">
+@article{knierim2024prosody,
+  title={Prosody as a Teaching Signal for Agent Learning:
+  Exploratory Studies and Algorithmic Implications},
+  author={Knierim, Matilda and Jain, Sahil and Han Aydoğan, Murat
+  and Mitra, Kenneth and Kush Desai and Saran, Akanksha and Baraka, Kim},
+  journal={ACM International Conference on Multimodal Interaction (ICMI)},
+  year={2024}
+}
+</pre>
               </div>
               <p id="icmi2024-desc"> Prosodic cues from human teachers can enhance learning outcomes for reinforcement learning and imitation learning paradigms.</p>
             </td>
@@ -514,7 +531,7 @@
 
           <tr>
             
-            <td style="padding:20px;width:30%;vertical-align:middle">
+            <td style="padding:20px;width:30%;vertical-align:top">
               <a href="images/vid_rep.png"> <img src="images/vid_rep.png"></a></td>
               <td style="padding:20px;width:70%;vertical-align:top">
               <p><a href="https://arxiv.org/abs/2403.13765" id="iclr2024">
@@ -555,7 +572,7 @@
 
           <tr>
             <!--Update the width:30% and width:70% for text and images to the required proportions-->
-            <td style="padding:20px;width:30%;vertical-align:middle">
+            <td style="padding:20px;width:30%;vertical-align:top">
               <a href="images/VeSSAL3.png"> <img src="images/VeSSAL3.png"></a></td>
               <td style="padding:20px;width:70%;vertical-align:top">
               <p><a href="https://arxiv.org/abs/2303.02535" id="vessal">
@@ -577,7 +594,8 @@
                 <pre xml:space="preserve" id="vessal-bibtex" class="hidden">
 @article{saran2023streaming,
   title={Streaming Active Learning with Deep Neural Networks},
-  author={Saran, Akanksha and Yousefi, Safoora and Krishnamurthy, Akshay<br>&emsp;&emsp;&emsp;&emsp;and Langford, John and Ash, Jordan T.},
+  author={Saran, Akanksha and Yousefi, Safoora and Krishnamurthy, Akshay
+  and Langford, John and Ash, Jordan T.},
   journal={arXiv preprint arXiv:2303.02535},
   year={2023}
 }
@@ -607,8 +625,10 @@
         
                 <pre xml:space="preserve" id="hrilbr23-bibtex" class="hidden">
 @inproceedings{Aydo&#x11F;an2023yeess,
-  title={&ldquo;Yeess!&rdquo; &ldquo;No-oh-oh...&rdquo; Implicit Robot Task Information<br>&emsp;&emsp;from Prosody in Human Verbal Feedback},
-  author={Aydo&#x11F;an, Murat Han  and Mitra, Kenneth D and Desai, Kush<br>&emsp;&emsp;and Faulkner, Taylor Kessler and Saran, Akanksha and Baraka, Kim},
+  title={&ldquo;Yeess!&rdquo; &ldquo;No-oh-oh...&rdquo; Implicit Robot Task Information
+  from Prosody in Human Verbal Feedback},
+  author={Aydo&#x11F;an, Murat Han and Mitra, Kenneth D and Desai, Kush
+  and Faulkner, Taylor Kessler and Saran, Akanksha and Baraka, Kim},
   journal={},
   year={2023}
 }
@@ -812,7 +832,7 @@
           
          <!--
           <tr>
-            <td style="padding:20px;width:30%;vertical-align:middle">
+            <td style="padding:20px;width:30%;vertical-align:top">
               <a href="images/aux_airl_2.png">  <img src="images/aux_airl_2.png"></a></td>
               <td style="padding:20px;width:70%;vertical-align:top">
               <p><a href="papers/aux_airl.pdf" id="icmlw21">
