@@ -183,6 +183,7 @@
             <heading>&nbsp;&nbsp;Recent News</heading>
             <div class="news-content">
               <ul class="news-ul"> 
+                <li> New paper on <a href="https://arxiv.org/abs/2610.14415">Red-Teaming of Vision-Language-Action Models via Quality Diversity Environment Generation</a> is now on arXiv.</li>
                 <li> I was recognized as a <a href="data/TopACNeurIPS2026.pdf">top Area Chair</a> for <a href="https://neurips.cc/">NeurIPS 2026</a>.</li>
                 <li> Our paper on <a href="https://openreview.net/forum?id=GMPy1cDgml&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DTMLR%2FAuthors%23your-submissions)">Coachable Agents for Interactive Gameplay</a> was accepted to <a href="https://jmlr.org/tmlr/">TMLR</a> with a <a href="https://jmlr.org/tmlr/editorial-policies.html#certifications">Featured Certification</a>.</li>
                 <li> I was honored with the <a href="https://www.linkedin.com/feed/update/urn:li:activity:7489693773715869696/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAARHk4kBoZAEVT_pGoVmtJ9SXUHarjd1CIU">REYA award (Recognizing Excellence in Young Alumni)</a> 
@@ -196,7 +197,7 @@
                 <li> New <a href="https://arxiv.org/pdf/2603.12510">paper</a> on red-teaming Vision-Language-Action models is now on arXiv.</li>
                 <li> Our workshop proposal on <a href="https://robot-fm-safety.github.io">Trustworthy Embodied Foundation Models</a> has been accepted to <a href="https://roboticsconference.org/program/workshops/">RSS 2026</a>.</li>
                 <li> Serving as an <a href="https://jmlr.org/tmlr/editorial-board.html">Action Editor</a> for <a href="https://jmlr.org/tmlr/">TMLR</a>.</li>
-                <li> Serving as an <a href="https://icml.cc/Conferences/2026/ProgramCommittee">Area Chair</a> for <a href="https://icml.cc/Conferences/2026">ICML 2026</a>.</li>
+                <!-- <li> Serving as an <a href="https://icml.cc/Conferences/2026/ProgramCommittee">Area Chair</a> for <a href="https://icml.cc/Conferences/2026">ICML 2026</a>.</li> -->
                 <!-- <li> Our paper <a href="https://dl.acm.org/doi/10.1145/3779297">Human-Interactive Robot Learning: Definition, Challenges, and Recommendations</a> was accepted to the <a href="https://thri.acm.org/2025/">ACM Transactions on Human-Robot Interaction (THRI)</a>.</li> -->
                 <!-- <li> I served as an <a href="https://neurips.cc/Conferences/2025/ProgramCommittee">Area Chair</a> for <a href="https://neurips.cc/">NeurIPS 2025</a> (recognized among the top 10% of ACs).</li>
                 <li> I served as an <a href="https://icml.cc/Conferences/2025/ProgramCommittee">Area Chair</a> for <a href="https://icml.cc/Conferences/2025">ICML 2025</a>.</li> -->
@@ -337,6 +338,68 @@
 
           <tr>
             <td style="padding:20px;width:30%;vertical-align:top">
+              <a href="images/redteamVLAEnv.png"> <img src="images/redteamVLAEnv.png"></a></td>
+              <td style="padding:20px;width:70%;vertical-align:top">
+              <p><a href="https://arxiv.org/abs/2610.14415" id="icra2027">
+              <papertitle> Red-Teaming of Vision-Language-Action Models via Quality Diversity Environment Generation.</papertitle></a><br>
+              Shihan Zhao, Henry Chen, Sophie Hsu, Minjune Hwang, Siddharth Srikanth, Freddie Liang, <br>
+               <b>Akanksha Saran</b>, Aaquib Tabrez, Stefanos Nikolaidis, Daniel Seita.
+              <br>arXiv 2026
+              </p>
+        
+              <div class="paper" id="icra2027">
+              <a href="https://arxiv.org/pdf/2610.14415">pdf</a> |
+              <a href="javascript:toggleblock('icra2027-abstract', 'icra2027-desc')">abstract</a> |
+              <a shape="rect" href="javascript:toggleblock('icra2027-bibtex', 'icra2027-desc')" class="togglebib">bibtex</a> |
+              <a href="https://qd-env.github.io/qdeg/">project webpage</a> 
+
+              <p align="justify"> <i id="icra2027-abstract" class="hidden"> 
+                A long-standing goal in robotics is to develop
+                generalist robots that can perform tasks across a wide range
+                of settings, flexibly specified with images and text. Vision-
+                Language-Action (VLA) models offer a promising path toward
+                this goal by training on large collections of robot demonstra-
+                tions. However, while VLAs perform well in-distribution, they
+                often fail under minor test-time shifts, such as changes in object
+                positions, lighting, textures, and camera poses. To address
+                this, we propose Quality Diversity for Diverse Environment
+                Generation (Q-DEG), a method for improving VLA robustness
+                by generating adversarial environments and fine-tuning the
+                VLA on its own successful rollouts. Q-DEG uses Quality Diver-
+                sity (QD) optimization to find a set of high-failure environments,
+                while promoting diversity using policy embeddings extracted
+                from the VLA. These environments expose vulnerabilities that
+                can be mitigated through self-imitation fine-tuning, thereby
+                improving the VLA’s robustness. In simulation, we conduct
+                experiments across three representative VLA models, and our
+                results indicate that Q-DEG improves robustness to out-of-
+                distribution (OOD) adversarial environments compared to the
+                base VLA and VLAs fine-tuned using data collected from
+                two red-teaming baselines. Furthermore, we demonstrate that
+                improving VLA robustness through Q-DEG facilitates sim-to-
+                real transfer.
+              </i></p>
+        
+              <pre xml:space="preserve" id="icra2027-bibtex" class="hidden">
+                @article{zhao2026red,
+                title={Red-Teaming of Vision-Language-Action Models via Quality Diversity Environment Generation},
+                author={Zhao, Shihan and Chen, Henry and Hsu, Ya-Chuan and Hwang, Minjune and Srikanth, Siddharth 
+                  and Liang, Freddie and and Saran, Akanksha and Seita, Daniel and Tabrez, Aaquib and Nikolaidis, Stefanos},
+                journal={arXiv},
+                year={2026}
+              }
+              </pre>
+
+              </div>
+                <p id="icra2027-desc">A method that leverages Quality Diversity and VLMs to automatically generate diverse, 
+                  adversarial (but feasible) environment variations, which are then used to expose vulnerabilities and improve the 
+                  robustness of VLAs through fine-tuning.</p>
+            </td>
+          </tr> 
+
+
+          <tr>
+            <td style="padding:20px;width:30%;vertical-align:top">
               <a href="images/coachable.png"> <img src="images/coachable.png"></a></td>
               <td style="padding:20px;width:70%;vertical-align:top">
               <p><a href="https://arxiv.org/abs/2607.00642" id="coachable2026">
@@ -372,16 +435,17 @@
                 performance.
                 </i></p>
 
-<pre xml:space="preserve" id="coachable2026-bibtex" class="hidden">
-@article{capobianco2026coachable,
-  title={Coachable Agents for Interactive Gameplay},
-  author={Capobianco, Roberto and van Seijen, Harm and Bard, Nolan D. and Burch, Neil
-  and Davelouis, Fatima and Davidson, Josh and Devlic, Alisa and Du, Yunshu
-  and Durugkar, Ishan and Saran, Akanksha and others},
-  journal={arXiv},
-  year={2026}
-}
-</pre>
+              <pre xml:space="preserve" id="coachable2026-bibtex" class="hidden">
+              @article{capobianco2026coachable,
+                title={Coachable Agents for Interactive Gameplay},
+                author={Capobianco, Roberto and van Seijen, Harm and Bard, Nolan D. and Burch, Neil
+                and Davelouis, Fatima and Davidson, Josh and Devlic, Alisa and Du, Yunshu
+                and Durugkar, Ishan and Saran, Akanksha and others},
+                journal={arXiv},
+                year={2026}
+              }
+              </pre>
+
               </div>
               <p id="coachable2026-desc">A framework for coaching RL agents to exhibit user-selectable "styles" at run time
                 while still solving the core task, demonstrated across game combat, car racing, and humanoid walking.</p>
@@ -395,7 +459,7 @@
               <td style="padding:20px;width:70%;vertical-align:top">
               <p><a href="https://arxiv.org/abs/2603.12510" id="iros2026">
               <papertitle>Red-Teaming Vision-Language-Action Models via Quality Diversity Prompt Generation for Robust Robot Policies.</papertitle></a><br>
-              Siddharth Srikanth, Freddie Liang, Sophie Hsu, Varun Bhatt, Shihan Zhao, Henry Chen, Bryon Tjanaka, 
+              Siddharth Srikanth, Freddie Liang, Ya-Chuan Hsu, Varun Bhatt, Shihan Zhao, Henry Chen, Bryon Tjanaka, 
               Minjune Hwang, <b>Akanksha Saran</b>, Daniel Seita, Aaquib Tabrez, Stefanos Nikolaidis.
               <br>Workshop on Trustworthy Embodied Foundation Models, RSS 2026
               <br>IROS 2026
@@ -405,6 +469,7 @@
               <a href="https://arxiv.org/pdf/2603.12510">pdf</a> |
               <a href="javascript:toggleblock('iros2026-abstract', 'iros2026-desc')">abstract</a> |
               <a shape="rect" href="javascript:toggleblock('iros2026-bibtex', 'iros2026-desc')" class="togglebib">bibtex</a> |
+              <a href="https://github.com/qdigvla/Q-DIG">code</a> |
               <a href="https://qdigvla.github.io">project webpage</a> 
 
               <p align="justify"> <i id="iros2026-abstract" class="hidden"> 
@@ -425,17 +490,18 @@
                 improving the robustness of VLA-based robots. 
                 </i></p>
         
-<pre xml:space="preserve" id="iros2026-bibtex" class="hidden">
-@article{srikanth2026red,
-  title={Red-Teaming Vision-Language-Action Models via Quality Diversity
-  Prompt Generation for Robust Robot Policies},
-  author={Srikanth, Siddharth and Liang, Freddie and Hsu, Sophie and Bhatt, Varun
-  and Zhao, Shihan and Chen, Henry and Tjanaka, Bryon and Hwang, Minjune
-  and Saran, Akanksha and Seita, Daniel and Tabrez, Aaquib and Nikolaidis, Stefanos},
-  journal={arXiv},
-  year={2026}
-}
-</pre>
+              <pre xml:space="preserve" id="iros2026-bibtex" class="hidden">
+              @article{srikanth2026red,
+                title={Red-Teaming Vision-Language-Action Models via Quality Diversity
+                Prompt Generation for Robust Robot Policies},
+                author={Srikanth, Siddharth and Liang, Freddie and Hsu, Ya-Chuan and Bhatt, Varun
+                and Zhao, Shihan and Chen, Henry and Tjanaka, Bryon and Hwang, Minjune
+                and Saran, Akanksha and Seita, Daniel and Tabrez, Aaquib and Nikolaidis, Stefanos},
+                journal={arXiv},
+                year={2026}
+              }
+              </pre>
+
               </div>
               <p id="iros2026-desc">A method that leverages Quality Diversity and VLMs to automatically generate diverse, 
                 adversarial natural language instructions, which are then used to expose vulnerabilities and improve the 
